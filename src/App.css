@@ -1,7 +1,228 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background: #485563;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 500px;
+  scroll-behavior: smooth;
+}
+.alice-text {
+  color: aliceblue;
+}
+.alice-background {
+  background: aliceblue;
+}
+
+.color-1 {
+  color: #FCF7F8;
+}
+.color-1-background {
+  background: #FCF7F8;
+}
+
+.color-2 {
+  color: #CED3DC;
+}
+.color-2-background {
+  background: #CED3DC;
+}
+
+.color-3 {
+  color: #ABA9C3;
+}
+.color-3-background {
+  background: #ABA9C3;
+}
+
+.color-4 {
+  color: #275DAD;
+}
+.color-4-background {
+  background: #275DAD;
+}
+
+.color-5 {
+  color: #5B616A;
+}
+.color-5-background {
+  background: #5B616A;
+}
+
+/* color codes
+  #485563 main, background
+  #757A80 slighty lighter, bluish
+  #486356 lighter, greenish
+  #393C40 darker, bluish
+  #BFBFBF very light, grayish
+  #404040 darker, grayish
+ */
+.nav {
+  background: #404040;
+  color: #BFBFBF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:1% 0 1% 0;
+}
+.navLinks {
+  color:#BFBFBF;
+  text-decoration: none;
+}
+.topButtons {
+  background: #404040;
+  color: #BFBFBF;
+  border-radius: .5rem;
+  padding: 2% 3%;
+  cursor: pointer;
+  border:.5px #BFBFBF solid;
+  font-size:1.25rem;
+  text-decoration:none;
+}
+.topButtons:focus {
+  outline:none;
+}
+.buttonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top:15%;
+}
+
+.programmer-icon {
+  margin-top:10%;
+}
+
 .App {
   text-align: center;
 }
+.topDiv {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-size:contain;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display:flex;
+  flex-direction:column;
+  /* margin-top:-5%;  */
+}
+.title {
+  font-size: 2.5rem;
 
+}
+.subTitle {
+  font-family:monospace;
+  letter-spacing: .04em;
+  font-size: 21px;
+  overflow: hidden;
+  white-space:nowrap;
+  margin: 0 auto;
+  animation:
+    typewriter 5s steps(25, end),
+    cursor .55s step-end 7;
+  animation-delay: 0s;
+  border-right:1px transparent solid
+}
+.desc {
+  padding:5% 10% 5%;
+  font-size:1.15em;
+  margin:auto;
+  width: 75%;
+  margin-top:10%;
+}
+@keyframes typewriter {
+  from{width: 0px;}
+  to{width: 400px;}
+}
+@keyframes cursor {
+  from,to{border-color:transparent}
+  50%{border-color:orange}
+}
+.skillsTitle {
+  font-size: 2rem;
+  font-weight:600;
+  text-decoration: underline;
+}
+.skillsDivHead {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.skillsDiv {
+  width:75%;
+  border-radius:.5rem;
+  margin:auto;
+  margin-top: 20%;
+  color: black;
+  background:#DBDDDD;
+  padding: 7% 0 7%;
+}
+.skillsList {
+  width:40%;
+  /* margin:auto; */
+  font-size: 1.5rem;
+  color: #333;
+  list-style-type: none;
+  margin-top:10%
+}
+.skillsHeader {
+  font-size: 1.75rem;
+  /* border: 1px #CED3DC solid;
+  border-radius: .5rem; */
+  width: 50%;
+  margin: auto;
+  padding: 3% 0 3%;
+  color: #333;
+  text-decoration: underline;
+}
+.typeDiv {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -10%;
+}
+.skillsListItem {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.skillsListHeader {
+  text-align: center;
+}
+.skillType {
+  margin: 5% 0 8%;
+  text-decoration: underline;
+  font-size: 1.15rem;
+  border: none;
+  background:transparent;
+  cursor:pointer;
+}
+.skillType:focus {
+  outline:none;
+}
+.skillTypeTitle {
+  font-size:1.35rem;
+  font-weight:500;
+  margin-bottom:10%;
+}
+.skillDesc {
+  margin: 5% 10%;
+}
+.svgButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.svgButton:focus {
+  background:cadetblue;
+  border-radius:.5rem;
+  padding:1%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,6 +249,60 @@
   color: #61dafb;
 }
 
+.info-header{
+  font-size: 1.2em;
+}
+.header-div {
+  position: relative;
+  margin-top:15%;
+  text-align: center;
+  z-index: 5000;
+}
+.projectDiv {
+  margin-top: 10%;
+  width:100%;
+  background: whitesmoke;
+  padding:5% 0;
+}
+.projectHeader {
+  font-size: 1.75rem;
+  margin-bottom: 8%;
+}
+.yessNoDesc {
+  width:34%;
+}
+
+.ssDiv {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.yessnoLinkTitle {
+  font-size:1.4rem;
+  margin-bottom: 5%;
+  color:#404040;
+}
+.aboutTitle {
+  font-size:1.75rem;
+  color:#BFBFBF;
+}
+.aboutDiv {
+  background:beige;
+  width:75%;
+  margin:auto;
+  border:1rem cadetblue solid;
+  border-radius:.5rem;
+}
+.aboutSubtitle {
+  text-decoration: underline;
+  font-weight:700;
+  margin-top:7%;
+  font-size: 1.25rem;
+}
+.aboutText {
+  margin:3.5%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +310,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+@media only screen and (min-width:465px) {
+  /* .subTitle {
+    font-size:23px;
+  }
+  .desc {
+    font-size:1.25em4
+    margin-top:50%;
+  }  */
+}
+@media only screen and (min-width:650){
+
+}
+@media only screen and (min-width:760px) {
+  .desc {
+    width:50%
+  }
+  .title {
+    margin-top: auto;
+  }
+  .desc {
+    margin-top: auto;
+  }
+  .buttonDiv {
+    margin-top: auto;
+  }
+  .topButtons {
+    padding:1%;
+    font-size:1.25rem;
+  }
+}
+@media only screen and (min-width:900px) {
+
+}
+@media only screen and (min-width:1060px) {
+  .topDiv {
+    padding: 0 0 17%;
+  }
+  .desc {
+    width:40%;
+  }
+  .skillsDiv {
+    width: 60%;
+  }
+}
+@media only screen and (min-width:1200px) {
+
 }
