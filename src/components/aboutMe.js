@@ -28,7 +28,8 @@ function AboutMe() {
           <p className='aboutSubtitle'>Personal</p>
           <p className='aboutText'>I'm a part time wrestling coach. I've been a high school coach for over 5 years. I am also now working with a club program
           5th grade through 12th grade. I love it and it is a large part of my life. To me programming mirrors wrestling in that both require the same hard work, commitment,
-          and fearlessness in order to succeed. I'm a bike commuter and you will catch me riding my fixie 12 months a year. </p>
+          and fearlessness in order to succeed. With over 15 years in the service industry I have developed great customer facing and social skills.
+          I am able to understand, and anticipate sentiment and react accordingly not only taking care of their expectations, but exceeding them. I'm a bike commuter and you will catch me riding my fixie 12 months a year. </p>
         </a.div>
       </VisibilitySensor>
     </div>
