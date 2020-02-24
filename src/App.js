@@ -45,7 +45,7 @@ function App() {
           This site was built from scratch to learn react hooks and work on CSS and JS animations. So stay awhile, let me know what you think in the contact section.</a.p>
         </a.div>
         <a.div className='buttonDiv' style={desc}>
-          <a className='topButtons' href='https://docs.google.com/document/d/1nuFqDiiCthMo-okmsf1ZJ6XZKc1f9xfsWaP5oU2oO0Y/edit?usp=sharing' target='_blank'>My Resume</a>
+          <a className='topButtons' href='https://docs.google.com/document/d/1xBBaXE6z5XrrCUDafygd0G-ziBgV22prIvgx1Umqufc/edit?usp=sharing' target='_blank'>My Resume</a>
         </a.div>
       </a.div>
       <div id='skills'></div>
