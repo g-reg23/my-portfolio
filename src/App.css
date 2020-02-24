@@ -65,11 +65,17 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding:1% 0 1% 0;
 }
 .navLinks {
   color:#BFBFBF;
   text-decoration: none;
+  padding:.5%;
+  transition:.3s;
+  /* border-radius:.5rem; */
+}
+.navLinks:hover {
+  color:#404040;
+  background:#BFBFBF;
 }
 .topButtons {
   background: #404040;
@@ -80,6 +86,11 @@ html {
   border:.5px #BFBFBF solid;
   font-size:1.25rem;
   text-decoration:none;
+  transition:.3s;
+}
+.topButtons:hover {
+  color:#404040;
+  background:#BFBFBF;
 }
 .topButtons:focus {
   outline:none;
@@ -158,7 +169,7 @@ html {
   margin:auto;
   margin-top: 10%;
   color: black;
-  background:#DBDDDD;
+  background:#e7e7e7;
   padding: 7% 0 7%;
 }
 .skillsList {
@@ -183,7 +194,7 @@ html {
   display:flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: -10%;
+  margin-top: -12%;
 }
 .skillsListItem {
   display:flex;
@@ -201,6 +212,15 @@ html {
   border: none;
   background:transparent;
   cursor:pointer;
+  transition:.3s;
+  padding:2%;
+  border-radius:.5rem;
+  color:#404040;
+}
+.skillType:hover {
+  background:#404040;
+  color:#BFBFBF;
+
 }
 .skillType:focus {
   outline:none;
@@ -217,11 +237,17 @@ html {
   border: none;
   background: transparent;
   cursor: pointer;
+  border-radius:.5rem;
+  transition:.3s;
+}
+.svgButton:hover {
+  background:#486356;
 }
 .svgButton:focus {
-  background:cadetblue;
+  background:#757A80;
   border-radius:.5rem;
   padding:1%;
+  outline:none;
 }
 .App-logo {
   height: 40vmin;
@@ -260,38 +286,81 @@ html {
 }
 .projectDiv {
   margin-top: 10%;
-  width:100%;
   background: whitesmoke;
   padding:5% 0;
 }
 .projectHeader {
   font-size: 1.75rem;
   margin-bottom: 8%;
+  font-weight: 500;
+}
+.yessnoLinkTitle {
+  margin-bottom:5%;
+  font-size: 1.75rem;
+  color: #404040;
+}
+.yessnoLinkTitle:hover {
+  color:hotpink;
 }
 .yessNoDesc {
-  width:34%;
+  background: #486356;
+  padding: 10%;
+  border-radius: .5rem;
+  color: whitesmoke;
+  margin: 5%;
 }
 
 .ssDiv {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  margin-top:10%;
+  display: inline-grid;
+  grid-template-rows: [begin] 20% [divider1] 40% [divider2] 40% [endline];
+  grid-template-columns: [begin] 100% [endline];
 }
-.yessnoLinkTitle {
-  font-size:1.4rem;
-  margin-bottom: 5%;
-  color:#404040;
+.grid-desc {
+  grid-row: begin / divider1;
+  grid-column: begin/ endline;
+  margin-top: -1em;
+  transition:.3s;
+  font-size:1.25rem;
+}
+/* .grid-desc:hover{
+  width:120%;
+  font-size:1.23rem;
+} */
+.image1 {
+  grid-row: divider1 / divider2;
+  grid-column: begin/ endline;
+  height:auto;
+  overflow:auto;
+  padding-top: 20%;
+}
+.image2 {
+  grid-row: divider2 / endline;
+  grid-column: begin/ endline;
+  margin-bottom: 10%;
+  height:auto;
+  overflow: auto;
+  padding-bottom: 10%;
+}
+.yessnoImages {
+  width: 45%;
+  transition:1s;
+}
+.yessnoImages:hover{
+  width:60%;
+}
+.subsectDiv {
+  /* width:100%; */
 }
 .aboutTitle {
   font-size:1.75rem;
   color:#BFBFBF;
 }
 .aboutDiv {
-  background:beige;
+  background:#BFBFBF;
   width:75%;
   margin:auto;
-  border:1rem cadetblue solid;
+  border:.75rem #757A80 solid;
   border-radius:.5rem;
 }
 .aboutSubtitle {
@@ -312,18 +381,36 @@ html {
   }
 }
 @media only screen and (min-width:465px) {
-  /* .subTitle {
-    font-size:23px;
-  }
-  .desc {
-    font-size:1.25em4
-    margin-top:50%;
-  }  */
+
 }
 @media only screen and (min-width:650){
 
 }
 @media only screen and (min-width:760px) {
+  .ssDiv {
+    grid-template-columns: [begin] 33% [divider1] 33% [divider2] 33% [endline];
+    grid-template-rows: [begin] 100% [endline];
+  }
+  .image1 {
+    grid-column: begin / divider1;
+    grid-row: begin / endline;
+    padding-top:0;
+  }
+  .image2 {
+    grid-column: divider2 / endline;
+    grid-row: begin / endline;
+  }
+  .grid-desc {
+    grid-column: divider1 / divider2;
+    grid-row: begin / endline;
+    font-size:1.1rem;
+  }
+  .yessnoImages {
+    width:50%;
+  }
+  .yessnoImages:hover {
+    width:85%;
+  }
   .desc {
     width:50%
   }

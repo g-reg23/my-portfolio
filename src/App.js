@@ -25,7 +25,7 @@ function App() {
     opacity:1,
     from: {opacity:0},
     config:{duration:3000},
-    delay:4000,
+    delay:5000,
   })
   const desc = useSpring({
     opacity:1,
