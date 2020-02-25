@@ -74,7 +74,6 @@ function Skills() {
     <div className='skillsOuter'>
       <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility offset={{bottom:300}}>
         <div>
-          <p className='skillsHead'>Skills</p>
           <a.div style={backgroundAnim} className='skillsDiv'>
              <a.div style={style}>
                 <div className='typeDiv'>
