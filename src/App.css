@@ -332,7 +332,7 @@ html {
   grid-column: begin/ endline;
   margin-top: -1em;
   transition:.3s;
-  font-size:1.25rem;
+  font-size:1rem;
 }
 /* .grid-desc:hover{
   width:120%;
@@ -343,7 +343,7 @@ html {
   grid-column: begin/ endline;
   height:auto;
   overflow:auto;
-  padding-top: 20%;
+  padding-top: 40%;
 }
 .image2 {
   grid-row: divider2 / endline;
@@ -391,11 +391,21 @@ html {
     transform: rotate(360deg);
   }
 }
-@media only screen and (min-width:465px) {
+@media only screen and (min-width:350px) {
 
 }
-@media only screen and (min-width:650){
-
+@media only screen and (min-width:450px) {
+  .grid-desc {
+    font-size: 1.1rem
+  }
+  .image1 {
+    padding-top:20%;
+  }
+}
+@media only screen and (min-width:550px){
+  .image1 {
+    padding-top:10%;
+  }
 }
 @media only screen and (min-width:760px) {
   .ssDiv {
