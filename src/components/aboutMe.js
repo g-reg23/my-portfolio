@@ -12,11 +12,9 @@ function AboutMe() {
     config: {duration: 2000},
   })
   const shrink = useSpring({
-    // transform: vis ? 'scaleX(1) scaleY(1)' : 'scaleX(0) scaleY(0)',
-    // from: {transform:'scaleX(0) scaleY(0)'},
-    transform: vis ? 'skew(0, 0)' : 'skew(132deg, 73deg)',
-    from: {transform:'skew(132deg,73deg)'},
-    config: {duration: 3000},
+    transform: vis ? 'scaleX(1) scaleY(1)' : 'scaleX(0) scaleY(0)',
+    from: {transform:'scaleX(0) scaleY(0)'},
+    config: {duration: 2000},
   });
   return(
     <div id='about' style={{marginTop:'25%'}}>
