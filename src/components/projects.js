@@ -17,7 +17,11 @@ function Projects() {
   })
   console.log(showTech);
   const toggleTech = () => {
-    window.scroll(0, 500);
+    if (showTech) {
+      window.scroll(0, 1250);
+    } else {
+      window.scroll(0, 2850);
+    }
     setTech(!showTech);
   }
 
