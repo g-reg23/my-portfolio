@@ -14,7 +14,7 @@ function Desc() {
       <a.span className='subsectDiv grid-desc' style={fade}>
           <p className='yessNoDesc'>YessNo is a yes or no voting application. It offers both public and private votes. Public votes are open to all YessNo members
           to voice their opinions on. Private votes are for smaller groups of people. Each vote member will receive an SMS message and email with
-          a unique link to the vote.</p>
+          a unique link to the vote. Technical deep dive below.</p>
       </a.span>
     </VisibilitySensor>
   )

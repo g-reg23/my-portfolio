@@ -42,7 +42,7 @@ function App() {
           <a.p className='alice-text title' style={title}>Greg Stauffer</a.p>
           <a.p className='alice-text subTitle'>Full Stack Web Developer</a.p>
           <a.p className='alice-text desc' style={desc}>Hey I'm Greg, I'm a full stack web developer. I love coding and learning about the web.
-          This site was built from scratch to learn react hooks and work on CSS and JS animations. So stay awhile, let me know what you think in the contact section.</a.p>
+          This site was built from scratch to learn react hooks, and continue working on my frontend skills. So stay awhile, let me know what you think in the contact section.</a.p>
         </a.div>
         <a.div className='buttonDiv' style={desc}>
           <a className='topButtons' href='https://docs.google.com/document/d/1xBBaXE6z5XrrCUDafygd0G-ziBgV22prIvgx1Umqufc/edit?usp=sharing' target='_blank'>My Resume</a>

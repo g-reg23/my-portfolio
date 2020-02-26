@@ -9,6 +9,9 @@ html {
   margin-bottom: 500px;
   scroll-behavior: smooth;
 }
+* {
+  box-sizing:border-box;
+}
 .alice-text {
   color: aliceblue;
 }
@@ -322,14 +325,24 @@ html {
   transition:.3s;
   font-size:1rem;
 }
-.infoBlurb {
-  color: whitesmoke;
-  padding: 10%;
-  background: #404040;
-  margin-top: 10%;
+.titleDiv {
+  background:#68B686;
+  color:aliceblue;
+}
+.innerTitle {
+  font-size:1.7rem;
+  font-weight:550;
+  padding:0
+}
+.innerSubtitle {
+  font-size: 1.3rem;
+  font-weight:400;
 }
 .folioSect {
   margin-top:15%;
+}
+.gitHubLink {
+  color:navy;
 }
 /* .grid-desc:hover{
   width:120%;
@@ -356,6 +369,50 @@ html {
 .yessnoImages:hover{
   width:60%;
 }
+.techButton {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.techDiv {
+  margin-top:25%;
+}
+.innerDiv {
+
+  background: #486356;
+  padding: 0;
+}
+.minimize {
+  font-size:1.15rem;
+  color:#E5F2EA;
+  padding-bottom: 1%;
+}
+.infoDiv {
+  padding:5%;
+  color:	#E5F2EA;
+}
+.titleDiv {
+  background:	#9ACEAE;
+  width:100%;
+  padding:3%;
+  color:	#012810;
+}
+.innerTitle {
+  padding:0;
+}
+.innerSubtitle {
+  padding:0;
+}
+.subHeading {
+  font-size:1.25rem;
+  font-weight:500;
+  color: #E5F2EA;
+}
+.techDescription {
+  font-size:1.15rem;
+}
 .program-icon {
   margin-top: 10%;
 }
@@ -369,6 +426,7 @@ html {
 .aboutDiv {
   background:#BFBFBF;
   width:75%;
+  max-width:1150px;
   margin:auto;
   border:.75rem #757A80 solid;
   border-radius:.5rem;
@@ -420,8 +478,23 @@ html {
   .subTitle {
     font-size: 21px
   }
+  .techDiv {
+    margin-top:16%
+  }
 }
 @media only screen and (min-width:550px){
+  .techDiv {
+    margin-top:10%
+  }
+  .innerDiv {
+    width: 75%;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius:.5rem;
+  }
+  .titleDiv {
+    border-radius: .5rem.5rem 0 0;
+  }
   .image1 {
     margin-top:15%;
   }
@@ -433,6 +506,9 @@ html {
   }
 }
 @media only screen and (min-width:760px) {
+  .techDiv {
+    margin-top:5%
+  }
   .image1 {
     margin-top:10%;
   }
