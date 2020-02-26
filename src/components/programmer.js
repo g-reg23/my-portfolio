@@ -28,16 +28,22 @@ function Programmer() {
   })
   const leftOuterPhone = useSpring({
     fill: !hover ? '#e6f3ff': '#262626',
+    transform: !hover ? 'translate(50px,50px)' : 'translate(0, 0)',
     config: {duration: 3000}
   })
   const rightOuterPhone = useSpring({
     fill: !hover ? '#cfdbe6': '#1a1a1a',
+    transform: !hover ? 'translate(50px,50px)' : 'translate(0, 0)',
     config: {duration: 3000}
+  })
+  const screenShift = useSpring({
+    transform: !hover ? 'translate(50px,50px)' : 'translate(0, 0)',
+    config: {duration: 3000},
+    from: {transform:'translate(50px, 50px)'}
   })
   console.log(hover);
   return (
-    <a.svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='program-icon' style={enter} onClick={() => setHover(!hover)}
-     onMouseEnter={() => setHover(!hover)} onMouseLeave={() => setHover(false)}>
+    <a.svg xmlns="http://www.w3.org/2000/svg" width='35%' viewBox="0 0 512 512" style={enter} className='program-icon' onClick={() => setHover(!hover)}>
       <circle cx="256" cy="256" r="256" fill="#324a5e" className='mainBackground'></circle>
       <path
         className="leftBottomShadow"
@@ -112,8 +118,8 @@ function Programmer() {
         fill="#cfdbe6"
         d="M402.525 292.49h-28.581v140.786h28.581c7.304 0 13.226-5.922 13.226-13.226V305.714c0-7.304-5.922-13.224-13.226-13.224z"
       ></a.path>
-      <path fill="#b5f1f4" className='leftInnerPhone' d="M335.127 311.682h76.791v102.383h-76.791z"></path>
-      <path fill="#84dbff" className='rightInnerPhone' d="M373.95 311.682h37.96v102.383h-37.96z"></path>
+      <path fill="#b5f1f4" style={screenShift} className='leftInnerPhone' d="M335.127 311.682h76.791v102.383h-76.791z"></path>
+      <path fill="#84dbff" style={screenShift} className='rightInnerPhone' d="M373.95 311.682h37.96v102.383h-37.96z"></path>
       <path
         className='leftGlasses'
         fill="#808183"

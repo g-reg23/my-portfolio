@@ -7,7 +7,7 @@ function Desc() {
   const fade = useSpring({
     opacity: vis ? 1 : 0,
     from: {opacity:0},
-    config: {duration: 2000},
+    config: {duration: 1000},
   });
   return(
     <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility>

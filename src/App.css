@@ -88,6 +88,7 @@ html {
   font-size:1.25rem;
   text-decoration:none;
   transition:.3s;
+  white-space:nowrap;
 }
 .topButtons:hover {
   color:#404040;
@@ -100,8 +101,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top:15%;
-  margin-bottom:10%;
+  margin-top:20%;
 }
 
 .programmer-icon {
@@ -111,19 +111,6 @@ html {
 .App {
   text-align: center;
 }
-.topDiv {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-size:contain;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  display:flex;
-  flex-direction:column;
-  /* margin-top:-5%;  */
-}
 .title {
   font-size: 2.5rem;
 
@@ -131,13 +118,13 @@ html {
 .subTitle {
   font-family:monospace;
   letter-spacing: .04em;
-  font-size: 21px;
+  font-size: 19px;
   overflow: hidden;
   white-space:nowrap;
   margin: 0 auto;
   animation:
     typewriter 5s steps(25, end),
-    cursor .55s step-end 7;
+    cursor .5s step-end 7;
   animation-delay: 0s;
   border-right:1px transparent solid
 }
@@ -159,6 +146,7 @@ html {
 .skillsOuter {
   padding-top:5%;
   padding-bottom:10%;
+  margin-top:50%;
 }
 .skillsTitle {
   font-size: 2rem;
@@ -219,7 +207,7 @@ html {
 .skillType {
   margin: 5% 0 8%;
   text-decoration: underline;
-  font-size: 1.15rem;
+  font-size: 1rem;
   border: none;
   background:transparent;
   cursor:pointer;
@@ -227,6 +215,7 @@ html {
   padding:2%;
   border-radius:.5rem;
   color:#404040;
+  white-space: nowrap;
 }
 .skillType:hover {
   background:#404040;
@@ -296,7 +285,7 @@ html {
   z-index: 5000;
 }
 .projectDiv {
-  margin-top: 10%;
+  margin: 10% 0 15%;
   background: whitesmoke;
   padding:5% 0;
 }
@@ -305,10 +294,11 @@ html {
   margin-bottom: 8%;
   font-weight: 500;
 }
-.yessnoLinkTitle {
+.projectTitle {
   margin-bottom:5%;
   font-size: 1.75rem;
   color: #404040;
+  text-decoration: underline;
 }
 .yessnoLinkTitle:hover {
   color:hotpink;
@@ -316,9 +306,7 @@ html {
 .yessNoDesc {
   background: #486356;
   padding: 10%;
-  border-radius: .5rem;
   color: whitesmoke;
-  margin: 5%;
 }
 
 .ssDiv {
@@ -334,6 +322,15 @@ html {
   transition:.3s;
   font-size:1rem;
 }
+.infoBlurb {
+  color: whitesmoke;
+  padding: 10%;
+  background: #404040;
+  margin-top: 10%;
+}
+.folioSect {
+  margin-top:15%;
+}
 /* .grid-desc:hover{
   width:120%;
   font-size:1.23rem;
@@ -343,15 +340,14 @@ html {
   grid-column: begin/ endline;
   height:auto;
   overflow:auto;
-  padding-top: 40%;
+  margin-top:40%;
 }
 .image2 {
   grid-row: divider2 / endline;
   grid-column: begin/ endline;
-  margin-bottom: 10%;
   height:auto;
   overflow: auto;
-  padding-bottom: 10%;
+  margin-top:10%;
 }
 .yessnoImages {
   width: 45%;
@@ -359,6 +355,9 @@ html {
 }
 .yessnoImages:hover{
   width:60%;
+}
+.program-icon {
+  margin-top: 10%;
 }
 .subsectDiv {
   /* width:100%; */
@@ -392,22 +391,57 @@ html {
   }
 }
 @media only screen and (min-width:350px) {
-
+  .skillsOuter {
+    margin-top:45%
+  }
+  .subTitle {
+    font-size: 19px
+  }
+  .image1 {
+    margin-top:30%;
+  }
 }
 @media only screen and (min-width:450px) {
+  .image1 {
+    margin-top:22%;
+  }
   .grid-desc {
     font-size: 1.1rem
   }
-  .image1 {
-    padding-top:20%;
+  .skillType {
+    font-size:1.15rem;
+  }
+  .skillsOuter {
+    margin-top:40%
+  }
+  .buttonDiv {
+    margin-top: 15%;
+  }
+  .subTitle {
+    font-size: 21px
   }
 }
 @media only screen and (min-width:550px){
   .image1 {
-    padding-top:10%;
+    margin-top:15%;
+  }
+  .skillsOuter {
+    margin-top:30%
+  }
+  .buttonDiv {
+    margin-top: 11%;
   }
 }
 @media only screen and (min-width:760px) {
+  .image1 {
+    margin-top:10%;
+  }
+  .skillsOuter {
+    margin-top:20%
+  }
+  .buttonDiv {
+    margin-top: 8%;
+  }
   .ssDiv {
     grid-template-columns: [begin] 33% [divider1] 33% [divider2] 33% [endline];
     grid-template-rows: [begin] 100% [endline];
@@ -415,11 +449,13 @@ html {
   .image1 {
     grid-column: begin / divider1;
     grid-row: begin / endline;
-    padding-top:0;
   }
   .image2 {
     grid-column: divider2 / endline;
     grid-row: begin / endline;
+  }
+  .yessNoDesc {
+    border-radius: .5rem;
   }
   .grid-desc {
     grid-column: divider1 / divider2;
@@ -432,6 +468,10 @@ html {
   .yessnoImages:hover {
     width:85%;
   }
+  .infoBlurb {
+    margin: auto;
+    border-radius: .5rem;
+  }
   .desc {
     width:50%
   }
@@ -441,20 +481,23 @@ html {
   .desc {
     margin-top: auto;
   }
-  .buttonDiv {
-    margin-top: auto;
-  }
   .topButtons {
     padding:1%;
     font-size:1.25rem;
   }
 }
 @media only screen and (min-width:900px) {
+  .buttonDiv {
+    margin-top: 6%;
+  }
 
 }
 @media only screen and (min-width:1060px) {
-  .topDiv {
-    padding: 0 0 17%;
+  .buttonDiv {
+    margin-top: 3%;
+  }
+  .skillsOuter {
+    margin-top:10%
   }
   .desc {
     width:40%;
@@ -462,7 +505,23 @@ html {
   .skillsDiv {
     width: 60%;
   }
+  .title {
+    margin-top:-5%;
+  }
+  .yessNoDesc {
+    font-size: 1.1rem;
+  }
+  .infoBlurb {
+    font-size:1.1rem;
+    margin: 5% 20%;
+    padding:5%;
+  }
 }
 @media only screen and (min-width:1200px) {
-
+  .buttonDiv {
+    margin-top: 1%;
+  }
+  .aboutDiv {
+    width: 62%;
+  }
 }
