@@ -16,14 +16,6 @@ function Projects() {
     config: {duration: 1500},
   })
   console.log(showTech);
-  const toggleTech = () => {
-    if (showTech) {
-      window.scroll(0, 1250);
-    } else {
-      window.scroll(0, 2850);
-    }
-    setTech(!showTech);
-  }
 
   return(
     <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility offset={{bottom:300}}>
@@ -38,8 +30,8 @@ function Projects() {
           </div>
           <div className='techDiv'>
             {!showTech ?
-              <button onClick={toggleTech} className='techButton'>Show technical deep dive</button> :
-              <div className='innerDiv' onClick={() => setTech(!showTech)}>
+              <a onClick={() => setTech(!showTech)} id='techButton' className='techButton'>Show technical deep dive</a> :
+              <div className='innerDiv'>
                 <div className='titleDiv'>
                   <p className='innerTitle'>YessNo.tk</p>
                   <p className='innerSubtitle'>MERN stack web app</p>
@@ -84,7 +76,7 @@ function Projects() {
                   an immutable vote smart contract on the ethereum blockchain is very interesting to me. It could replace public votes or become
                   it's own entity. Email me if you have any interest in collaborating on something similar to EtherVote by YessNo.</p>
                 </div>
-                <p className='minimize'>Click anywhere to minimize</p>
+                <a href='#techButton' className='minimize' onClick={() => setTech(!showTech)}>Click here to minimize</a>
               </div>
             }
           </div>
