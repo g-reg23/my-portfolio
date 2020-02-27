@@ -24,8 +24,9 @@ function FolioDesc() {
           react-visibility-sensor for scroll-into-view transitions. React-spring is very nice to be able to work with transitions and animations
           in javascript, but I do recommend some knowledge of CSS (transition, animation, transform to name a few) as well,
           as they compliment each other well. I really like the react-spring library and plan to continue working with it and building
-          more complex animations. I did not use any CSS frameworks, I wanted to work on my understanding and ability with CSS. This site was
-          deployed using a one-click pipeline with Netlify.
+          more complex animations. I did not use any CSS frameworks, I wanted to work on my understanding and ability with CSS.
+          I built a responsive layout for this website using CSS grid and flexbox as well as media queries.
+          This site was deployed using a one-click pipeline with Netlify.
           </p>
         </div>
       </a.div>
