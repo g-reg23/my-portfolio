@@ -307,9 +307,9 @@ html {
   color:hotpink;
 }
 .yessNoDesc {
-  background: #486356;
+  background: #485563;
   padding: 10%;
-  color: whitesmoke;
+  color: #ECEEEF;
 }
 
 .ssDiv {
@@ -325,10 +325,6 @@ html {
   transition:.3s;
   font-size:1rem;
 }
-.titleDiv {
-  background:#68B686;
-  color:aliceblue;
-}
 .innerTitle {
   font-size:1.7rem;
   font-weight:550;
@@ -339,7 +335,7 @@ html {
   font-weight:400;
 }
 .folioSect {
-  margin-top:15%;
+  margin-top:40%;
 }
 .gitHubLink {
   color:navy;
@@ -381,7 +377,7 @@ html {
 }
 .innerDiv {
 
-  background: #486356;
+  background: #485563;
   padding: 0;
 }
 .minimize {
@@ -391,13 +387,14 @@ html {
 }
 .infoDiv {
   padding:5%;
-  color:	#E5F2EA;
+  color:	#ECEEEF;
+  font-weight: 350;
 }
 .titleDiv {
-  background:	#9ACEAE;
+  background:	#6C7782;
   width:100%;
   padding:3%;
-  color:	#012810;
+  color:	#ECEEEF;
 }
 .innerTitle {
   padding:0;
@@ -408,10 +405,10 @@ html {
 .subHeading {
   font-size:1.25rem;
   font-weight:500;
-  color: #E5F2EA;
+  color: 	#ECEEEF;
 }
 .techDescription {
-  font-size:1.15rem;
+  font-size:1.1rem;
 }
 .program-icon {
   margin-top: 10%;
@@ -479,12 +476,12 @@ html {
     font-size: 21px
   }
   .techDiv {
-    margin-top:16%
+    margin-top:18%
   }
 }
 @media only screen and (min-width:550px){
   .techDiv {
-    margin-top:10%
+    margin-top:15%
   }
   .innerDiv {
     width: 75%;
@@ -507,7 +504,7 @@ html {
 }
 @media only screen and (min-width:760px) {
   .techDiv {
-    margin-top:5%
+    margin-top:11%
   }
   .image1 {
     margin-top:10%;
@@ -547,6 +544,8 @@ html {
   .infoBlurb {
     margin: auto;
     border-radius: .5rem;
+    font-size:1.1rem;
+    color:#ECEEEF;
   }
   .desc {
     width:60%
