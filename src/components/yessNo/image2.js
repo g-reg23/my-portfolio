@@ -16,7 +16,7 @@ function Image2() {
   }
   return(
     <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility>
-      <a.a href='https://yessno.tk' target='_blank' style={fade}>
+      <a.a href='https://yessno.tk' target='_blank' style={fade} id='techButtonScroll'>
         <Popup trigger={<img src={activeFull} className='yessnoImages image2' alt='yessno-image2' />} position='top center' on='hover'>
           <p style={pStyle}>Click image to go to site</p>
         </Popup>

@@ -6,6 +6,7 @@ import Desc from './yessNo/description';
 import Image1 from './yessNo/image1';
 import Image2 from './yessNo/image2';
 import FolioDesc from './folio/folioDesc';
+import TripGroup from './folio/trip-group.png';
 
 function Projects() {
   const [vis, setVis] = useState(false);
@@ -30,7 +31,7 @@ function Projects() {
           </div>
           <div className='techDiv'>
             {!showTech ?
-              <a onClick={() => setTech(!showTech)} id='techButton' className='techButton'>Show technical deep dive</a> :
+              <a onClick={() => setTech(!showTech)} className='techButton'>Show technical deep dive</a> :
               <div className='innerDiv'>
                 <div className='titleDiv'>
                   <p className='innerTitle'>YessNo.tk</p>
@@ -76,7 +77,7 @@ function Projects() {
                   an immutable vote smart contract on the ethereum blockchain is very interesting to me. It could replace public votes or become
                   it's own entity. Email me if you have any interest in collaborating on something similar to EtherVote by YessNo.</p>
                 </div>
-                <a href='#techButton' className='minimize' onClick={() => setTech(!showTech)}>Click here to minimize</a>
+                <a href='#techButtonScroll' className='minimize' onClick={() => setTech(!showTech)}>Click here to minimize</a>
               </div>
             }
           </div>
