@@ -6,7 +6,8 @@ import Desc from './yessNo/description';
 import Image1 from './yessNo/image1';
 import Image2 from './yessNo/image2';
 import FolioDesc from './folio/folioDesc';
-import TripGroup from './folio/trip-group.png';
+import TripDesc from './tripApp/tripDesc';
+import TripImage1 from './tripApp/image1';
 
 function Projects() {
   const [vis, setVis] = useState(false);
@@ -22,7 +23,7 @@ function Projects() {
     <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility offset={{bottom:300}}>
       <a.div id='projects' className='projectDiv' style={backgroundAnim}>
         <p className='projectHeader'>My Projects</p>
-        <section>
+        <section className='folioSect'>
           <a href='https://yessno.tk' target='_blank' className='projectTitle'>YessNo.tk</a>
           <div className='ssDiv'>
             <Image1 />
@@ -84,10 +85,11 @@ function Projects() {
 
         </section>
         <section className='folioSect'>
-          <a href='https://github.com/g-reg23/my-portfolio' target='_blank' className='projectTitle'>GStauf.tech</a>
           <FolioDesc />
         </section>
-        <section>
+        <section className='folioSect'>
+          <TripDesc />
+          <TripImage1 />
         </section>
       </a.div>
     </VisibilitySensor>

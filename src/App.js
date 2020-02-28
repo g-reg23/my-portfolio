@@ -3,9 +3,11 @@ import {useSpring, animated as a, config} from 'react-spring';
 import Programmer from './components/programmer';
 import AboutMe from './components/aboutMe';
 import Skills from './components/skills';
-import Projects from './components/projects'
+import Projects from './components/projects';
+import Contact from './components/contact';
 import logo from './logo.svg';
 import './App.css';
+
 // import VisibilitySensor from 'react-visibility-sensor';
 
 
@@ -46,12 +48,14 @@ function App() {
         </a.div>
         <a.div className='buttonDiv' style={desc}>
           <a className='topButtons' href='https://docs.google.com/document/d/1xBBaXE6z5XrrCUDafygd0G-ziBgV22prIvgx1Umqufc/edit?usp=sharing' target='_blank'>My Resume</a>
+          <a className='topButtons' href='mailto:gstaufferdev@gmail.com?Subject=Portfolio&Contact' target='_top'>Contact Me</a>
         </a.div>
       </a.div>
       <div id='skills'></div>
       <Skills />
       <Projects />
       <AboutMe />
+      <Contact />
     </div>
   );
 }

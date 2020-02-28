@@ -1,13 +1,11 @@
 html {
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Cairo', sans-serif;
-  font-family: 'Titillium Web', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cairo', 'Titilium Web', 'Open Sans', sans-serif;
   background: #485563;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin-bottom: 500px;
   scroll-behavior: smooth;
+  line-height: 1.5;
 }
 * {
   box-sizing:border-box;
@@ -103,8 +101,8 @@ html {
 .buttonDiv {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin-top:20%;
+  justify-content: space-evenly;
+  margin-top:5%;
 }
 
 .programmer-icon {
@@ -135,8 +133,7 @@ html {
   padding:5% 10% 5%;
   font-size:1.15em;
   margin:auto;
-  width: 75%;
-  margin-top:10%;
+  width: 85%;
 }
 @keyframes typewriter {
   from{width: 0px;}
@@ -315,8 +312,10 @@ html {
 .ssDiv {
   margin-top:10%;
   display: inline-grid;
-  grid-template-rows: [begin] 20% [divider1] 40% [divider2] 40% [endline];
+  grid-template-rows: [begin] 1fr [divider1] 2fr [divider2] 2fr [endline];
   grid-template-columns: [begin] 100% [endline];
+  grid-auto-rows: minmax(100px, auto);
+  /* grid-template-rows: 1fr 1fr 1fr; */
 }
 .grid-desc {
   grid-row: begin / divider1;
@@ -335,7 +334,7 @@ html {
   font-weight:400;
 }
 .folioSect {
-  margin-top:40%;
+  margin-top:30%;
 }
 .gitHubLink {
   color:navy;
@@ -373,7 +372,7 @@ html {
   cursor: pointer;
 }
 .techDiv {
-  margin-top:25%;
+  margin-top:10%;
 }
 .innerDiv {
 
@@ -437,13 +436,8 @@ html {
 .aboutText {
   margin:3.5%;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contactDiv {
+  margin-top:15%
 }
 @media only screen and (min-width:350px) {
   .skillsOuter {
@@ -457,6 +451,9 @@ html {
   }
 }
 @media only screen and (min-width:450px) {
+  .folioSect {
+    margin-top: 20%;
+  }
   .image1 {
     margin-top:22%;
   }
@@ -470,16 +467,19 @@ html {
     margin-top:40%
   }
   .buttonDiv {
-    margin-top: 15%;
+    margin-top: 4%;
   }
   .subTitle {
     font-size: 21px
   }
   .techDiv {
-    margin-top:18%
+    margin-top:9%
   }
 }
 @media only screen and (min-width:550px){
+  .folioSect {
+    margin-top: 15%;
+  }
   .techDiv {
     margin-top:15%
   }
@@ -499,12 +499,15 @@ html {
     margin-top:30%
   }
   .buttonDiv {
-    margin-top: 11%;
+    margin-top: 3%;
   }
 }
 @media only screen and (min-width:760px) {
+  .folioSect {
+    margin-top: 10%;
+  }
   .techDiv {
-    margin-top:11%
+    margin-top:0;
   }
   .image1 {
     margin-top:10%;
@@ -513,10 +516,10 @@ html {
     margin-top:20%
   }
   .buttonDiv {
-    margin-top: 8%;
+    margin-top: 2%;
   }
   .ssDiv {
-    grid-template-columns: [begin] 33% [divider1] 33% [divider2] 33% [endline];
+    grid-template-columns: [begin] 1fr [divider1] 1fr [divider2] 1fr [endline];
     grid-template-rows: [begin] 100% [endline];
   }
   .image1 {
@@ -563,14 +566,11 @@ html {
 }
 @media only screen and (min-width:900px) {
   .buttonDiv {
-    margin-top: 6%;
+    margin-top: 1%;
   }
 
 }
 @media only screen and (min-width:1060px) {
-  .buttonDiv {
-    margin-top: 3%;
-  }
   .skillsOuter {
     margin-top:10%
   }
@@ -586,16 +586,13 @@ html {
   .yessNoDesc {
     font-size: 1.1rem;
   }
-  .infoBlurb {
-    font-size:1.1rem;
-    margin: 5% 20%;
-    padding:5%;
-  }
 }
 @media only screen and (min-width:1200px) {
-  .buttonDiv {
-    margin-top: 1%;
+  .innerDiv {
+    width:50%;
+    margin:auto;
   }
+
   .aboutDiv {
     width: 62%;
   }

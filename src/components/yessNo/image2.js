@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {useSpring, animated as a, config} from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
 import Popup from "reactjs-popup";
-import activeFull from '../images/active-full.png';
+import activeFull from '../images/yessnovotes.png';
 
 function Image2() {
   const [vis, setVis] = useState(false);

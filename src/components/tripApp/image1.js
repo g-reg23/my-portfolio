@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import {useSpring, animated as a, config} from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
 import Popup from "reactjs-popup";
-import yessNoFull from '../images/yessnofront.png';
+import TripLanding from '../images/trip-landing.png';
 
-function Image1() {
+const TripImage1 = () => {
   const [vis, setVis] = useState(false);
   const fade = useSpring({
     transform: vis ? 'rotateY(0)' : 'rotateY(180deg)',
@@ -16,13 +16,13 @@ function Image1() {
   }
   return(
     <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility>
-      <a.a href='https://yessno.tk' target='_blank' style={fade}>
-        <Popup trigger={<img src={yessNoFull} className='yessnoImages image1' alt='yessno-image'/>} position='top center' on='hover'>
-          <p style={pStyle}>Click image go to site</p>
+      <a.a href='https://github.com/g-reg23/trip-app' target='_blank' style={fade}>
+        <Popup trigger={<img src={TripLanding} className='yessnoImages image1' alt='yessno-image'/>} position='top center' on='hover'>
+          <p style={pStyle}>Click image to view code at GitHub</p>
         </Popup>
       </a.a>
     </VisibilitySensor>
   )
 }
 
-export default Image1
+export default TripImage1;
