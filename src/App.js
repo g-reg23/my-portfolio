@@ -4,7 +4,6 @@ import Programmer from './components/programmer';
 import AboutMe from './components/aboutMe';
 import Skills from './components/skills';
 import Projects from './components/projects';
-import Contact from './components/contact';
 import logo from './logo.svg';
 import './App.css';
 
