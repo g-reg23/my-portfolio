@@ -326,7 +326,7 @@ html {
   display: inline-grid;
   grid-template-rows: [begin] 33% [divider1] 33% [divider2] 33% [endline];
   grid-template-columns: [begin] 100% [endline];
-  grid-row-gap: 20px;
+  grid-row-gap: 3em;
   /* grid-template-rows: 1fr 1fr 1fr; */
 }
 .grid-desc {
@@ -354,19 +354,26 @@ html {
   width:120%;
   font-size:1.23rem;
 } */
-.image1 {
+.imageLink1 {
   grid-row: divider1 / divider2;
-  /* align-self: start; */
-  margin-top:-.5em;
-
+  align-self: start;
 }
-.image2 {
+.imageLink2 {
   grid-row: divider2 / endline;
-  overflow: auto;
+  align-self: start;
 }
 .imageLink {
   width:40%;
   margin:auto;
+}
+.tripImage {
+  width:50%;
+  margin-top:10%;
+  transition:1s;
+  border-radius:.25rem;
+}
+.tripImage:hover {
+  width:60%;
 }
 .yessnoImages {
  width:100%;
@@ -550,18 +557,19 @@ html {
     margin-top: 6%;
   }
   .ssDiv {
+    display:inline-grid;
     grid-template-columns: [begin] 1fr [divider1] 1fr [divider2] 1fr [endline];
-    grid-template-rows: [begin] 100% [endline];
+    grid-template-rows: [begin] 1fr [endline];
   }
-  .image1 {
+  .imageLink1 {
     grid-column: begin / divider1;
     grid-row: begin / endline;
-    grid-row-end:auto;
+    align-self:start;
   }
-  .image2 {
+  .imageLink2 {
     grid-column: divider2 / endline;
     grid-row: begin / endline;
-    grid-row-end:auto;
+    align-self:start;
   }
   .grid-desc {
     grid-column: divider1 / divider2;
