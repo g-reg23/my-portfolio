@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import {useSpring, animated as a} from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
-import SkillsSvg from './svg/skillsSvg';
 import ReduxSvg from './svg/reduxSvg';
 import JSSvg from './svg/jSSvg';
 import ReactSvg from './svg/reactSvg';
@@ -23,7 +22,6 @@ import MysqlSvg from './svg/mysqlSvg';
 
 function Skills() {
   const [vis, setVis] = useState(false);
-  const [show, setShow] = useState(false);
   const frontEnd = ['Click an icon to read about that skill. To change skill type, click a different header above.',
   'Javascript is a client side scripting language for the web browser. Javascript is my language of choice. I have been writing javascript for over 2 years now. I have a strong basis in vanilla js, in my first app I used only vanilla js and managed to develop my own per page state management using vanilla js, closures, and prototypal inheritance. Currently I am working with React, but always love the oppurtunity to code vanilla js. I am always interested in learning more about javascript and am continuously reading and studying it, in order to increase my understanding.',
   'React is a javascript framework to help build user interfaces in single page applications. I have over 1 year experience working with React and the React ecosystem. As I have mentioned above, I recently learned the hooks API. My largest application (YessNo.tk) was written using class components, but I am transistioning to hooks and functional components, love the simplicity of useState(). Among some of the many great react libraries I am familiar with are react-router, react-spring, react-strap, trophy, and react-visibility-sensor',
@@ -120,7 +118,7 @@ function Skills() {
                 }
               </a.div>
           </a.div>
-          <p>All icons, excluding Flask and MySQL,  by </p><a style={{color:'blue'}} target="_blank" href="https://icons8.com">Icons8</a>
+          <p>All icons, excluding Flask and MySQL,  by </p><a style={{color:'blue'}} target="_blank" href="https://icons8.com" rel="noopener noreferrer">Icons8</a>
         </div>
       </VisibilitySensor>
     </div>

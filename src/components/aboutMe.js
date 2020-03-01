@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import {useSpring, animated as a, config} from 'react-spring';
+import {useSpring, animated as a} from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
-import Programmer from './programmer'
 import Popup from "reactjs-popup";
 
 function AboutMe() {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {useSpring, animated as a, config} from 'react-spring';
+import {useSpring, animated as a} from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
 
 function FolioDesc() {
@@ -15,7 +15,7 @@ function FolioDesc() {
         <div className='titleDiv'>
           <p className='innerTitle'>GStauf.tech</p>
           <p className='innerSubtitle'>React SPA Portfolio Site</p>
-          <a href='https://github.com/g-reg23/my-portfolio' target='_blank' className='gitHubLink'>View Code on GitHub</a>
+          <a href='https://github.com/g-reg23/my-portfolio' target='_blank' className='gitHubLink' rel="noopener noreferrer">View Code on GitHub</a>
         </div>
         <div className='infoDiv'>
           <span className='subHeading'>Front-End</span>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {useSpring, animated as a, config} from 'react-spring';
+import {useSpring, animated as a} from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
 
 const TripDesc = () => {
@@ -15,7 +15,7 @@ const TripDesc = () => {
         <div className='titleDiv'>
           <p className='innerTitle'>Trip Planning App</p>
           <p className='innerSubtitle'>Python Flask Web App</p>
-          <a href='https://github.com/g-reg23/trip-app' target='_blank' className='gitHubLink'>View code on GitHub</a>
+          <a href='https://github.com/g-reg23/trip-app' target='_blank' className='gitHubLink' rel="noopener noreferrer">View code on GitHub</a>
         </div>
         <div className='infoDiv'>
           <span className='subHeading'>Front-End</span>

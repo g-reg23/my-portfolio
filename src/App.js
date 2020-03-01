@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
-import {useSpring, animated as a, config} from 'react-spring';
+import React from 'react';
 import Header from './components/header';
 import AboutMe from './components/aboutMe';
 import Skills from './components/skills';
 import Projects from './components/projects';
-import logo from './logo.svg';
 import './App.css';
 
 // Top level component.

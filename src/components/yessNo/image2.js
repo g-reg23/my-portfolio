@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import {useSpring, animated as a, config} from 'react-spring';
+import {useSpring, animated as a} from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
 import Popup from "reactjs-popup";
 import activeFull from '../images/yessnovotes.png';
 
 function Image2() {
   const [vis, setVis] = useState(false);
-  const fade = useSpring({
+  const spin = useSpring({
     transform: vis ? 'rotateY(0)' : 'rotateY(-180deg)',
     from: {transform:'rotateY(-180deg)'},
     config: {duration: 1000},
@@ -16,8 +16,8 @@ function Image2() {
   }
   return(
     <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility>
-      <a.a href='https://yessno.tk' target='_blank' style={fade} id='techButtonScroll'>
-        <Popup trigger={<img src={activeFull} className='yessnoImages image2' alt='yessno-image2' />} position='top center' on='hover'>
+      <a.a href='https://yessno.tk' target='_blank' style={spin} id='techButtonScroll'>
+        <Popup trigger={<img src={activeFull} className='yessnoImages image2' alt='yessno-vote-page' />} position='top center' on='hover'>
           <p style={pStyle}>Click image to go to site</p>
         </Popup>
       </a.a>

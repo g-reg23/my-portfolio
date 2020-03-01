@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
-import {useSpring, animated as a, config} from 'react-spring';
-import VisibilitySensor from 'react-visibility-sensor';
+import React from 'react';
+import {useSpring, animated as a} from 'react-spring';
 
 const Header = () =>  {
-  const props = useSpring({
-    opacity: 1,
-    from: {opacity: 0},
-    config: {duration:4000},
-  })
   const title = useSpring({
     opacity:1,
     from: {opacity:0},
@@ -30,7 +24,7 @@ const Header = () =>  {
           This site was built from scratch to learn react hooks, and continue working on my frontend skills. So stay awhile, let me know what you think in the contact section.</a.p>
         </a.div>
         <a.div className='buttonDiv' style={desc}>
-          <a className='topButtons' href='https://docs.google.com/document/d/1xBBaXE6z5XrrCUDafygd0G-ziBgV22prIvgx1Umqufc/edit?usp=sharing' target='_blank'>My Resume</a>
+          <a className='topButtons' href='https://docs.google.com/document/d/1xBBaXE6z5XrrCUDafygd0G-ziBgV22prIvgx1Umqufc/edit?usp=sharing' rel="noopener noreferrer" target='_blank'>My Resume</a>
           <a className='topButtons' href='mailto:gstaufferdev@gmail.com?Subject=Portfolio%20Contact' target='_top'>Contact Me</a>
         </a.div>
       </a.div>

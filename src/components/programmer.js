@@ -41,7 +41,6 @@ function Programmer() {
     config: {duration: 3000},
     from: {transform:'translate(50px, 50px)'}
   })
-  console.log(hover);
   return (
     <a.svg xmlns="http://www.w3.org/2000/svg" width='35%' viewBox="0 0 512 512" style={enter} className='program-icon' onClick={() => setHover(!hover)}>
       <circle cx="256" cy="256" r="256" fill="#324a5e" className='mainBackground'></circle>
