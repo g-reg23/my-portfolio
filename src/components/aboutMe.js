@@ -7,7 +7,6 @@ function AboutMe() {
   const [vis, setVis] = useState(false);
   const backgroundAnim = useSpring({
     opacity: vis ? 1 : 0,
-    // transform: vis ? 'scaleX(1) scaleY(1)' : 'scaleX(0) scaleY(0)',
     from: {opacity:0},
     config: {duration: 2000},
   })

@@ -66,6 +66,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height:2em;
 }
 .navLinks {
   color:#BFBFBF;
@@ -117,7 +118,7 @@ html {
 
 }
 .subTitle {
-  font-family:monospace;
+  /* font-family:monospace; */
   letter-spacing: .04em;
   font-size: 19px;
   overflow: hidden;
@@ -404,7 +405,7 @@ html {
 }
 .subHeading {
   font-size:1.25rem;
-  font-weight:500;
+  font-weight:600;
   color: 	#ECEEEF;
 }
 .techDescription {
@@ -504,6 +505,9 @@ html {
   }
 }
 @media only screen and (min-width:760px) {
+  .nav {
+    height:2.25em;
+  }
   .folioSect {
     margin-top: 10%;
   }

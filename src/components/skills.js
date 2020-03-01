@@ -14,6 +14,13 @@ import FlaskSvg from './svg/flaskSvg';
 import PythonSvg from './svg/pythonSvg';
 import MysqlSvg from './svg/mysqlSvg';
 
+// show and setShow set an index to determine which array of skills to show. Ie if show === 1 then show backend skill icons.
+// Each skill type has its own array of descriptions for each skill within that skill type.
+// Each icon represents an index that corresponds to its description in its array.
+// After a skill type is changed, setType is called with the corresponding index of that skill type,
+// all three indexes are set back to 0.
+
+
 function Skills() {
   const [vis, setVis] = useState(false);
   const [show, setShow] = useState(false);

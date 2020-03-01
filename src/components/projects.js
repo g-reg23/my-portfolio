@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {useSpring, animated as a, config} from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
-import { Container, Row, Col } from 'reactstrap';
 import Desc from './yessNo/description';
 import Image1 from './yessNo/image1';
 import Image2 from './yessNo/image2';
@@ -17,7 +16,6 @@ function Projects() {
     from: {opacity:0},
     config: {duration: 1500},
   })
-  console.log(showTech);
 
   return(
     <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility offset={{bottom:300}}>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {useSpring, animated as a, config} from 'react-spring';
-import Programmer from './components/programmer';
+import Header from './components/header';
 import AboutMe from './components/aboutMe';
 import Skills from './components/skills';
 import Projects from './components/projects';
@@ -11,45 +11,10 @@ import './App.css';
 
 
 function App() {
-  const props = useSpring({
-    opacity: 1,
-    from: {opacity: 0},
-    config: {duration:4000},
-  })
-  const background = useSpring({
-    // opacity:1,
-    borderRadius:0,
-    from:{borderRadius:'100%'},
-    config:{duration:4000}
-  })
-  const title = useSpring({
-    opacity:1,
-    from: {opacity:0},
-    config:{duration:3000},
-    delay:5000,
-  })
-  const desc = useSpring({
-    opacity:1,
-    from: {opacity:0},
-    config:{duration:3000},
-    marginTop:'10%',
-    delay: 7000,
-  })
   return (
     <div className='App' >
       <div className='nav'><a href='#skills' className='navLinks'>Skills</a><a href='#projects' className='navLinks'>Projects</a><a href='#about' className='navLinks'>About Me</a></div>
-      <a.div className='topDiv'>
-        <a.div className='header-div'>
-          <a.p className='alice-text title' style={title}>Greg Stauffer</a.p>
-          <a.p className='alice-text subTitle'>Full Stack Web Developer</a.p>
-          <a.p className='alice-text desc' style={desc}>Hey I'm Greg, I'm a full stack web developer. I love coding and learning about the web.
-          This site was built from scratch to learn react hooks, and continue working on my frontend skills. So stay awhile, let me know what you think in the contact section.</a.p>
-        </a.div>
-        <a.div className='buttonDiv' style={desc}>
-          <a className='topButtons' href='https://docs.google.com/document/d/1xBBaXE6z5XrrCUDafygd0G-ziBgV22prIvgx1Umqufc/edit?usp=sharing' target='_blank'>My Resume</a>
-          <a className='topButtons' href='mailto:gstaufferdev@gmail.com?Subject=Portfolio%20Contact' target='_top'>Contact Me</a>
-        </a.div>
-      </a.div>
+      <Header />
       <div id='skills'></div>
       <Skills />
       <Projects />
