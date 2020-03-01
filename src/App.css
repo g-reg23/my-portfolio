@@ -60,6 +60,14 @@ html {
   #BFBFBF very light, grayish
   #404040 darker, grayish
  */
+ .iconLink {
+   color:#BFBFBF;
+   transition: .3s;
+ }
+ .iconLink:hover {
+   color:navy;
+   font-size: 1.05em;
+ }
 .nav {
   background: #404040;
   color: #BFBFBF;
@@ -255,6 +263,7 @@ html {
   height: 40vmin;
   pointer-events: none;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

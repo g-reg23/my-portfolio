@@ -118,7 +118,7 @@ function Skills() {
                 }
               </a.div>
           </a.div>
-          <p>All icons, excluding Flask and MySQL,  by </p><a style={{color:'blue'}} target="_blank" href="https://icons8.com" rel="noopener noreferrer">Icons8</a>
+          <p style={{color:'whitesmoke'}}>All icons, excluding Flask and MySQL,  by </p><a className='iconLink' href="https://icons8.com" rel="noopener noreferrer">Icons8</a>
         </div>
       </VisibilitySensor>
     </div>
