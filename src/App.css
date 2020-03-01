@@ -66,7 +66,7 @@ html {
  }
  .iconLink:hover {
    color:navy;
-   font-size: 1.05em;
+   font-size: 1.05;
  }
 .nav {
   background: #404040;
@@ -324,17 +324,18 @@ html {
 .ssDiv {
   margin-top:10%;
   display: inline-grid;
-  grid-template-rows: [begin] 1fr [divider1] 2fr [divider2] 2fr [endline];
+  grid-template-rows: [begin] 33% [divider1] 33% [divider2] 33% [endline];
   grid-template-columns: [begin] 100% [endline];
-  grid-auto-rows: minmax(100px, auto);
+  grid-row-gap: 20px;
   /* grid-template-rows: 1fr 1fr 1fr; */
 }
 .grid-desc {
   grid-row: begin / divider1;
   grid-column: begin/ endline;
-  margin-top: -1em;
+  align-self: start;
   transition:.3s;
   font-size:1rem;
+  margin-top:-1em;
 }
 .innerTitle {
   font-size:1.7rem;
@@ -345,9 +346,7 @@ html {
   font-size: 1.3rem;
   font-weight:400;
 }
-.folioSect {
-  margin-top:30%;
-}
+
 .gitHubLink {
   color:navy;
 }
@@ -357,24 +356,25 @@ html {
 } */
 .image1 {
   grid-row: divider1 / divider2;
-  grid-column: begin/ endline;
-  height:auto;
-  overflow:auto;
-  margin-top:40%;
+  /* align-self: start; */
+  margin-top:-.5em;
+
 }
 .image2 {
   grid-row: divider2 / endline;
-  grid-column: begin/ endline;
-  height:auto;
   overflow: auto;
-  margin-top:10%;
+}
+.imageLink {
+  width:40%;
+  margin:auto;
 }
 .yessnoImages {
-  width: 45%;
-  transition:1s;
+ width:100%;
+ transition: 1s;
+ margin:auto;
 }
-.yessnoImages:hover{
-  width:60%;
+.yessnoImages:hover {
+  width:130%;
 }
 .techButton {
   border: none;
@@ -393,7 +393,6 @@ html {
   margin-top:10%;
 }
 .innerDiv {
-
   background: #485563;
   padding: 0;
 }
@@ -424,6 +423,10 @@ html {
   font-weight:605;
   color: 	#ECEEEF;
 }
+.folioSect {
+  margin-top:45%;
+}
+
 .techDescription {
   font-size:1.1rem;
   font-weight:normal;
@@ -478,15 +481,12 @@ html {
     font-size: 19px
   }
   .image1 {
-    margin-top:30%;
+
   }
 }
 @media only screen and (min-width:450px) {
   .folioSect {
-    margin-top: 20%;
-  }
-  .image1 {
-    margin-top:22%;
+    margin-top:40%;
   }
   .grid-desc {
     font-size: 1.1rem
@@ -508,8 +508,8 @@ html {
   }
 }
 @media only screen and (min-width:550px){
-  .folioSect {
-    margin-top: 15%;
+  .margin-top {
+    margin-top: 35%
   }
   .techDiv {
     margin-top:15%
@@ -523,34 +523,31 @@ html {
   .titleDiv {
     border-radius: .5rem.5rem 0 0;
   }
-  .image1 {
-    margin-top:15%;
-  }
   .skillsOuter {
     margin-top:30%
   }
   .buttonDiv {
-    margin-top: 3%;
+    margin-top: 10%;
   }
 }
 @media only screen and (min-width:760px) {
+  .folioSect{
+    margin-top:20%;
+  }
   .nav {
     height:2.25em;
-  }
-  .folioSect {
-    margin-top: 10%;
   }
   .techDiv {
     margin-top:0;
   }
   .image1 {
-    margin-top:10%;
+
   }
   .skillsOuter {
     margin-top:20%
   }
   .buttonDiv {
-    margin-top: 2%;
+    margin-top: 6%;
   }
   .ssDiv {
     grid-template-columns: [begin] 1fr [divider1] 1fr [divider2] 1fr [endline];
@@ -559,36 +556,37 @@ html {
   .image1 {
     grid-column: begin / divider1;
     grid-row: begin / endline;
+    grid-row-end:auto;
   }
   .image2 {
     grid-column: divider2 / endline;
     grid-row: begin / endline;
+    grid-row-end:auto;
   }
   .grid-desc {
     grid-column: divider1 / divider2;
     grid-row: begin / endline;
+    grid-row-end:auto;
     font-size:1.1rem;
   }
+  .imageLink {
+    width:60%;
+  }
   .yessnoImages {
-    width:50%;
+    width:90%;
+    transition:1s;
   }
   .yessnoImages:hover {
-    width:85%;
+    width:115%;
   }
   .yessNoDesc {
     border-radius: .5em;
   }
-  .infoBlurb {
-    margin: auto;
-    border-radius: .5rem;
-    font-size:1.1rem;
-    color:#ECEEEF;
-  }
   .desc {
-    width:60%
+    width:70%
   }
   .title {
-    margin-top: auto;
+    /* margin-top: auto; */
   }
   .desc {
     margin-top: auto;
@@ -600,11 +598,17 @@ html {
 }
 @media only screen and (min-width:900px) {
   .buttonDiv {
-    margin-top: 1%;
+    margin-top: 6%;
+  }
+  .folio {
+    margin-top:
   }
 
 }
 @media only screen and (min-width:1060px) {
+  .buttonDiv {
+    margin-top: 4%;
+  }
   .skillsOuter {
     margin-top:10%
   }
@@ -622,6 +626,9 @@ html {
   }
 }
 @media only screen and (min-width:1200px) {
+  .buttonDiv {
+    margin-top: 2%;
+  }
   .innerDiv {
     width:50%;
     margin:auto;

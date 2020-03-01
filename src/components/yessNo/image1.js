@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {useSpring, animated as a} from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
 import Popup from "reactjs-popup";
-import yessNoFull from '../images/yessnofront.png';
+import yessNoFull from '../images/yessno-full1.png';
 
 function Image1() {
   const [vis, setVis] = useState(false);
@@ -16,8 +16,8 @@ function Image1() {
   }
   return(
     <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility>
-      <a.a href='https://yessno.tk' target='_blank' style={spin}>
-        <Popup trigger={<img src={yessNoFull} className='yessnoImages image1' alt='yessno-landing-page'/>} position='top center' on='hover'>
+      <a.a href='https://yessno.tk' target='_blank' style={spin} className='imageLink'>
+        <Popup trigger={<img src={yessNoFull} className='yessnoImages image1' alt='yessno-landing-page' />} position='top center' on='hover'>
           <p style={pStyle}>Click image go to site</p>
         </Popup>
       </a.a>
