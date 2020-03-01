@@ -7,8 +7,7 @@ import Projects from './components/projects';
 import logo from './logo.svg';
 import './App.css';
 
-// import VisibilitySensor from 'react-visibility-sensor';
-
+// Top level component.
 
 function App() {
   return (
