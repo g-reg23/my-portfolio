@@ -26,6 +26,8 @@ const Header = () =>  {
         <a.div className='buttonDiv' style={desc}>
           <a className='topButtons' href='https://docs.google.com/document/d/1xBBaXE6z5XrrCUDafygd0G-ziBgV22prIvgx1Umqufc/edit?usp=sharing' rel="noopener noreferrer" target='_blank'>My Resume</a>
           <a className='topButtons' href='mailto:gstaufferdev@gmail.com?Subject=Portfolio%20Contact' target='_top'>Contact Me</a>
+          <a className='topButtons' href='https://github.com/g-reg23' rel="noopener noreferrer" target='_blank'>My GitHub</a>
+
         </a.div>
       </a.div>
   )
