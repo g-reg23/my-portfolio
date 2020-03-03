@@ -220,7 +220,7 @@ html {
 .skillsListHeader {
   text-align: center;
 }
-.skillType {
+.skillType, .skillTypeFocus {
   margin: 5% 0 8%;
   text-decoration: underline;
   font-size: .88rem;
@@ -232,6 +232,10 @@ html {
   border-radius:.5rem;
   color:#404040;
   white-space: nowrap;
+}
+.skillTypeFocus {
+  background:#404040;
+  color:#BFBFBF;
 }
 .skillsDesc {
   padding:0 5%;

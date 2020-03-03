@@ -28,16 +28,33 @@ function Skills() {
     from: {opacity:0},
     config: {duration: 2000},
   })
+  console.log(typeIndex)
   return(
       <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility offset={{bottom:300}}>
         <div className='skillsOuter'>
           <a.div style={backgroundAnim} className='skillsDiv'>
              <a.div style={style}>
                 <div className='typeDiv'>
-                  <button className='skillType' onClick={() => setType(0)}>Front-End</button>
-                  <button className='skillType' onClick={() => setType(1)}>Back-End</button>
-                  <button className='skillType' onClick={() => setType(2)}>Database</button>
-                  <button className='skillType' onClick={() => setType(3)}>Dev-Ops</button>
+                  {typeIndex === 0 ?
+                    <button className='skillTypeFocus' onClick={() => setType(0)}>Front-End</button>
+                    :
+                    <button className='skillType' onClick={() => setType(0)}>Front-End</button>
+                  }
+                  {typeIndex === 1 ?
+                    <button className='skillTypeFocus' onClick={() => setType(1)}>Back-End</button>
+                    :
+                    <button className='skillType' onClick={() => setType(1)}>Back-End</button>
+                  }
+                  {typeIndex === 2 ?
+                    <button className='skillTypeFocus' onClick={() => setType(2)}>Database</button>
+                    :
+                    <button className='skillType' onClick={() => setType(2)}>Database</button>
+                  }
+                  {typeIndex === 3 ?
+                    <button className='skillTypeFocus' onClick={() => setType(3)}>Dev-ops</button>
+                    :
+                    <button className='skillType' onClick={() => setType(3)}>Dev-Ops</button>
+                  }
                 </div>
                 {typeIndex === 0 ?
                     <FrontEnd /> : typeIndex === 2 ?
