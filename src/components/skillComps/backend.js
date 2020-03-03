@@ -8,7 +8,7 @@ import PythonSvg from '../svg/pythonSvg';
 
 const Backend = () => {
   const [backIndex, setBack] = useState(0);
-  const backend = ['Click an icon read about that skill. To change skill type, click a different header above.',
+  const backend = ['Click an icon read about that skill. To change the overall skill type, click a different skill group at the top.',
   'Express.js is a modular web framework for Node. While building YessNo.tk I have utilized Express very much. Express works well with my node server, I have implemented all restAPI endpoints using express router. I have used other express middlewares such as express-validator for data validation, as well as created custom middleware for authorizing JWT tokens.',
   'Node.js is a server environment, it enables you to use JavaScript on the server. I have over 1 year experience working with Node and Javascript on the backend. Node coupled with Express has helped me build a nice stateless restAPI backend for YessNo.tk. I am also well versed in working with NPM.',
   'Flask is a micro web framework written in Python. As a micro framework, Flask provided me with great flexibilty to use what packages and libraries I needed. I implemented form validation using flask-wtf, data modeling for MySQL using SQLAlchemy, flask_socketio for chat and flask_login for simple sessions.',
@@ -16,13 +16,13 @@ const Backend = () => {
   return (
     <div>
       <p className='skillTypeTitle'>Back-End Skills</p>
-      <a.div className='skillsListItem'>
+      <div className='skillsListItem'>
         <button className='svgButton' onClick={() => setBack(2)}><NodeSvg /></button>
         <button className='svgButton' onClick={() => setBack(1)}><ExpressSvg /></button>
         <button className='svgButton' onClick={() => setBack(4)}><PythonSvg /></button>
         <button className='svgButton' onClick={() => setBack(3)}><FlaskSvg /></button>
-      </a.div>
-      <p className='skillDesc'>{backend[backIndex]}</p>
+      </div>
+      <p className='skillsDesc'>{backend[backIndex]}</p>
     </div>
   );
 };

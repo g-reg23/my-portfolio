@@ -93,6 +93,7 @@ html {
   color: #BFBFBF;
   border-radius: .5rem;
   padding: 2% 3%;
+  margin: 0 2%;
   cursor: pointer;
   border:.5px #BFBFBF solid;
   font-size:1.25rem;
@@ -169,13 +170,13 @@ html {
   font-weight: 500;
 }
 .skillsDiv {
-  width:75%;
+  width:95%;
   border-radius:.5rem;
   margin:auto;
   margin-top: 10%;
   color: black;
   background:#BFBFBF;
-  padding: 7% 0 7%;
+  padding: 0;
 }
 .skillsList {
   width:40%;
@@ -203,8 +204,12 @@ html {
 .typeDiv {
   display:flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin-top: -12%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top:-5%
+}
+.skillsOuter {
+  padding:0;
 }
 .skillsListItem {
   display:flex;
@@ -218,7 +223,7 @@ html {
 .skillType {
   margin: 5% 0 8%;
   text-decoration: underline;
-  font-size: 1rem;
+  font-size: .88rem;
   border: none;
   background:transparent;
   cursor:pointer;
@@ -228,22 +233,23 @@ html {
   color:#404040;
   white-space: nowrap;
 }
+.skillsDesc {
+  padding:0 5%;
+  font-size:1.05rem;
+}
 .skillType:hover {
   background:#404040;
   color:#BFBFBF;
 
 }
+/* do hex #1472FA */
 .skillType:focus {
   outline:none;
 }
 .skillTypeTitle {
-  font-size:1.35rem;
+  font-size:1.5rem;
   font-weight:500;
   margin-bottom:10%;
-}
-.skillDesc {
-  margin: 5% 10%;
-  font-size:1.2rem;
 }
 .svgButton {
   border: none;
@@ -251,12 +257,13 @@ html {
   cursor: pointer;
   border-radius:.5rem;
   transition:.3s;
+  padding:1%;
 }
 .svgButton:hover {
-  background:#486356;
+  background:#757A80;
 }
 .svgButton:focus {
-  background:#757A80;
+  background:#486356;
   border-radius:.5rem;
   padding:1%;
   outline:none;
@@ -298,7 +305,7 @@ html {
   z-index: 5000;
 }
 .projectDiv {
-  margin: 10% 0 15%;
+  margin: 20% 0 15%;
   background: whitesmoke;
   padding:5% 0;
 }
@@ -336,7 +343,7 @@ html {
   grid-column: begin/ endline;
   align-self: start;
   transition:.3s;
-  font-size:1rem;
+  font-size:1.02em;
   margin-top:-1em;
 }
 .innerTitle {
@@ -437,7 +444,7 @@ html {
 }
 
 .techDescription {
-  font-size:1.1rem;
+  font-size:1.02em;
   font-weight:normal;
 }
 .program-icon {
@@ -482,6 +489,11 @@ html {
   color:navy;
   font-size:1.2em;
 }
+@media only screen and (min-width:330px) {
+  .skillType {
+    font-size:.94rem;
+  }
+}
 @media only screen and (min-width:350px) {
   .skillsOuter {
     margin-top:45%
@@ -489,11 +501,11 @@ html {
   .subTitle {
     font-size: 19px
   }
-  .image1 {
-
-  }
 }
 @media only screen and (min-width:450px) {
+  .skillsDiv {
+    width:75%;
+  }
   .folioSect {
     margin-top:40%;
   }
@@ -501,7 +513,7 @@ html {
     font-size: 1.1rem
   }
   .skillType {
-    font-size:1.15rem;
+    font-size:1.0rem;
   }
   .skillsOuter {
     margin-top:40%
@@ -604,6 +616,9 @@ html {
   .topButtons {
     padding:1%;
     font-size:1.25rem;
+  }
+  .skillType {
+    font-size:1.15rem;
   }
 }
 @media only screen and (min-width:900px) {
