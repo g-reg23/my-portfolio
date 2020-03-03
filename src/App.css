@@ -276,9 +276,12 @@ html {
   background:#757A80;
 }
 .svgButton:focus {
+  outline:none;
   background:#486356;
   border-radius:.5rem;
-  padding:1%;
+  /* padding:1%; */
+}
+.svg:focus {
   outline:none;
 }
 .App-logo {
@@ -393,6 +396,7 @@ html {
   margin-top:10%;
   transition:1s;
   border-radius:.25rem;
+  margin:10% 0;
 }
 .tripImage:hover {
   width:50%;
@@ -636,8 +640,11 @@ html {
   }
 }
 @media only screen and (min-width:900px) {
+  .header-div {
+    margin-top:13%;
+  }
   .buttonDiv {
-    margin-top: 6%;
+    margin-top: 5%;
   }
   .folio {
     margin-top:
@@ -649,7 +656,7 @@ html {
     width:35%;
   }
   .buttonDiv {
-    margin-top: 4%;
+    margin-top: 3%;
   }
   .skillsOuter {
     margin-top:10%
@@ -668,6 +675,9 @@ html {
   }
 }
 @media only screen and (min-width:1200px) {
+  .header-div {
+    margin-top:11%;
+  }
   .buttonDiv {
     margin-top: 2%;
   }

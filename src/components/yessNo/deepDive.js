@@ -23,7 +23,7 @@ const DeepDive = () => {
             are open for any Yess/No member to vote on. Private votes set out to answer the initial problem. YessNo members can form groups of voters that are sent unique links
             to the private vote and are then able to vote on the given question within a time constraint specified by the vote creator. Private voters do not have
             to be YessNo members, each voter recieves a unique link to the private vote containing a hash which identifies and authorizes each vote
-            member. Unique links are sent to each private member via SMS message and email from the backend restAPI. YessNo was built using class-based components.
+            member. Unique links are sent to each private member via SMS message and email from the backend restAPI. YessNo was built using React class-based components.
             Some of the great react ecosystem libraries I have used in YessNo are: redux, trophy for graphing vote results, react-spring for transitions and animation,
             and react-strap (reacts bootstrap) for design.</p>
             <span className='subHeading'>Back-End</span>
@@ -33,7 +33,7 @@ const DeepDive = () => {
             containing a time expiring JWT token that will authorize the user for a certain time period. After authentication, the
             back-end will query the MongoDB Atlas database. I used Mongoose ODM to help with data modeling and queries. As my data models grew in complexity
             MongoDB's flexibilty was essential. Just one example would be private votes: the ability to embed objects into documents, allowed
-            private votes the functionality to store identification and voting information for each individual voter within a vote.
+            private votes the functionality to store identification and voting information for each individual voter within every private vote.
             MongoDB's JSON-like data structure made it easy to move data from MongoDB atlas to an API endoint and finally to the front-end
             and into the redux store. The site was deployed to DigitalOcean; both static front-end assets and back-end API configured on same droplet and served with nginx.
             SSL certificate configured using letsencrypt certbot.</p>
@@ -49,7 +49,7 @@ const DeepDive = () => {
             is an guarranteed eventuality. I am very interested in mobile development and am ready to try my hand, I am currently
             researching different mobile stacks, but am leaning toward react native. I am also interested in blockchain, therefore building
             an immutable vote smart contract on the ethereum blockchain is very interesting to me. It could replace public votes or become
-            it's own entity. Email me if you have any interest in collaborating on something similar to EtherVote by YessNo.</p>
+            it's own entity. Email me if you have any interest in collaborating on something similar to an immutable voting system on the Ethereum blockchain.</p>
           </div>
           <a href='#techButtonScroll' className='minimize' onClick={() => setTech(!showTech)}>Click here to minimize</a>
         </div>

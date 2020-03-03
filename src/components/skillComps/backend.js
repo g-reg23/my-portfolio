@@ -12,7 +12,7 @@ const Backend = () => {
   'Express.js is a modular web framework for Node. While building YessNo.tk I have utilized Express very much. Express works well with my node server, I have implemented all restAPI endpoints using express router. I have used other express middlewares such as express-validator for data validation, as well as created custom middleware for authorizing JWT tokens.',
   'Node.js is a server environment, it enables you to use JavaScript on the server. I have over 1 year experience working with Node and Javascript on the backend. Node coupled with Express has helped me build a nice stateless restAPI backend for YessNo.tk. I am also well versed in working with NPM.',
   'Flask is a micro web framework written in Python. As a micro framework, Flask provided me with great flexibilty to use what packages and libraries I needed. I implemented form validation using flask-wtf, data modeling for MySQL using SQLAlchemy, flask_socketio for chat and flask_login for simple sessions.',
-  'Python is a general purpose programming language. I have experience using Python to build web application, namely with Flask. Python is one of my first languages (right after C). Any oppurtunity I get, I would love to get back to programming with Python, I am very interested in working with Django. ']
+  'Python is a general purpose programming language. I have experience using Python to build web application, namely with Flask. Python is one of my first languages (right after C). Any opportunity I get, I would love to get back to programming with Python, I am very interested in working with Django. I am familiar with object orineted programming paradigms with python.']
   return (
     <div>
       <p className='skillTypeTitle'>Back-End Skills</p>

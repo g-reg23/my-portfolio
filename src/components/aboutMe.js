@@ -33,7 +33,9 @@ function AboutMe() {
             </p>
             <p className='aboutSubtitle'>Future Interests:</p>
             <p className='aboutText'>Understanding javascript at a deeper level. Mobile development: native development, React Native, and Dart. If I get the time,
-            I'm interested in building a mobile app for YessNo.tk using react native. Looking to work with other technologies including GraphQL, and Docker</p>
+            I'm interested in building a mobile app for YessNo.tk using react native. I would love to work with GraphQL, I plan to use the GraphQL query language
+            for API's in my next project. I am also interested in serverless architecture.
+            </p>
             <p className='aboutSubtitle'>Personal:</p>
             <p className='aboutText'>I'm a part time wrestling coach. I've been a high school coach for over 5 years. I am also now working with a club program
             5th grade through 12th grade. I love it and it is a large part of my life. To me programming mirrors wrestling in that both require the same hard work, commitment,
