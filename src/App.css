@@ -389,13 +389,13 @@ html {
   margin:auto;
 }
 .tripImage {
-  width:50%;
+  width:40%;
   margin-top:10%;
   transition:1s;
   border-radius:.25rem;
 }
 .tripImage:hover {
-  width:60%;
+  width:50%;
 }
 .yessnoImages {
  width:100%;
@@ -645,6 +645,9 @@ html {
 
 }
 @media only screen and (min-width:1060px) {
+  .tripImage {
+    width:35%;
+  }
   .buttonDiv {
     margin-top: 4%;
   }
