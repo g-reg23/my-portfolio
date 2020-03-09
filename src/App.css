@@ -151,7 +151,7 @@ html {
 }
 .desc {
   padding:5% 10% 5%;
-  font-size:1.15em;
+  font-size:.95rem;
   margin:auto;
   width: 85%;
 }
@@ -248,7 +248,7 @@ html {
 }
 .skillsDesc {
   padding:0 5%;
-  font-size:1.05rem;
+  font-size:1.09rem;
 }
 .skillType:hover {
   background:#404040;
@@ -336,6 +336,9 @@ html {
   color: #404040;
   text-decoration: underline;
 }
+.projectTitleDiv {
+  margin-bottom:10%;
+}
 .yessnoLinkTitle:hover {
   color:hotpink;
 }
@@ -360,7 +363,6 @@ html {
   align-self: start;
   transition:.3s;
   font-size:1.02em;
-  margin-top:-1em;
 }
 .innerTitle {
   font-size:1.7rem;
@@ -406,6 +408,12 @@ html {
  transition: 1s;
  margin:auto;
 }
+.image1 {
+  margin-top:60%;
+}
+.image2 {
+  margin-top:10%;
+}
 .yessnoImages:hover {
   width:130%;
 }
@@ -428,6 +436,7 @@ html {
 .innerDiv {
   background: #485563;
   padding: 0;
+  margin:auto;
 }
 .minimize {
   font-size:1.15rem;
@@ -461,7 +470,7 @@ html {
 }
 
 .techDescription {
-  font-size:1.02em;
+  font-size:1.09rem;
   font-weight:normal;
 }
 .program-icon {
@@ -494,6 +503,7 @@ html {
 }
 .aboutText {
   margin:3.5%;
+  font-size:1.09rem;
 }
 .email {
   font-size:1.15em;
@@ -512,6 +522,12 @@ html {
   }
 }
 @media only screen and (min-width:350px) {
+  .image1 {
+    margin-top:35%;
+  }
+  .desc {
+    font-size: 1.15rem;
+  }
   .skillsOuter {
     margin-top:45%
   }
@@ -520,6 +536,20 @@ html {
   }
 }
 @media only screen and (min-width:450px) {
+  .innerDiv, .grid-desc {
+    width:95%;
+    border-radius: .5rem;
+    margin:auto;
+  }
+  .titleDiv {
+    border-radius: .5rem .5rem 0 0;
+  }
+  .image1 {
+    margin-top:15%;
+  }
+  .projectTitleDiv {
+    margin-bottom:5%;
+  }
   .skillsDiv, .aboutDiv {
     width:75%;
   }
@@ -546,21 +576,16 @@ html {
   }
 }
 @media only screen and (min-width:550px){
-  .margin-top {
-    margin-top: 35%
-  }
   .techDiv {
-    margin-top:15%
+    margin-top:25%;
+  }
+  .image1 {
+    margin-top:10%;
   }
   .innerDiv {
     width: 75%;
-    margin-left: auto;
-    margin-right:auto;
-    border-radius:.5rem;
     max-width: 1200px;
-  }
-  .titleDiv {
-    border-radius: .5rem.5rem 0 0;
+    border-radius:.5rem;
   }
   .skillsOuter {
     margin-top:30%
@@ -570,6 +595,12 @@ html {
   }
 }
 @media only screen and (min-width:760px) {
+  .image2,.image1 {
+    margin-top:0;
+  }
+  .projectTitleDiv {
+    margin-bottom:0;
+  }
   .folioSect{
     margin-top:20%;
   }
@@ -577,10 +608,7 @@ html {
     height:2.25em;
   }
   .techDiv {
-    margin-top:0;
-  }
-  .image1 {
-
+    margin-top:5%;
   }
   .skillsOuter {
     margin-top:20%
@@ -683,6 +711,5 @@ html {
   }
   .innerDiv {
     width:50%;
-    margin:auto;
   }
 }

@@ -22,7 +22,9 @@ function Projects() {
       <a.div id='projects' className='projectDiv' style={backgroundAnim}>
         <p className='projectHeader'>My Projects</p>
         <section className='folioSect'>
-          <a href='https://yessno.tk' target='_blank' className='projectTitle' rel="noopener noreferrer">YessNo.tk</a>
+          <div className='projectTitleDiv'>
+            <a href='https://yessno.tk' target='_blank' className='projectTitle' rel="noopener noreferrer">YessNo.tk</a>
+          </div>
           <div className='ssDiv'>
             <Image1 />
             <Desc />

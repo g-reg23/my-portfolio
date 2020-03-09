@@ -5,15 +5,15 @@ const Header = () =>  {
   const title = useSpring({
     opacity:1,
     from: {opacity:0},
-    config:{duration:3000},
-    delay:5000,
+    config:{duration:1500},
+    delay:3500,
   })
   const desc = useSpring({
     opacity:1,
     from: {opacity:0},
-    config:{duration:3000},
+    config:{duration:2000},
     marginTop:'10%',
-    delay: 7000,
+    delay: 5000,
   })
   return(
       <a.div className='topDiv'>
