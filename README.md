@@ -1,3 +1,5 @@
+This is my portfolio. You may view it at [gstauf.tech](https://gstauf.tech).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
