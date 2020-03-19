@@ -44,10 +44,9 @@ const DeepDive = () => {
             and info on the vote. As I was happy with Twilio's SMS API, I decided to switch from node-mailer to Twilio's send-grid email
             API. It has worked well so far, while some emails are still sent to spam, it occurs less with send-grid.</p>
             <span className='subHeading'>Future</span>
-            <p className='techDescription'>I plan to continue personal development with YessNo. Continued design upgrades are planned,
-            including adding more transitions and animations, and designing a cleaner more beatiful aesthetic. Building a mobile application
-            is an guarranteed eventuality. I am very interested in mobile development and am ready to try my hand, I am currently
-            researching different mobile stacks, but am leaning toward react native. I am also interested in blockchain, therefore building
+            <p className='techDescription'>I am currently learning java and building a native Android mobile app for the private voting functionallity.
+            So be on the lookout for YessNoPrivate in the Google Play Store in the coming weeks and months. I plan to continue personal development with YessNo.tk. Continued design upgrades are planned,
+            including adding more transitions and animations, and designing a cleaner more beatiful aesthetic.  I am also interested in blockchain, therefore building
             an immutable vote smart contract on the ethereum blockchain is very interesting to me. It could replace public votes or become
             it's own entity. Email me if you have any interest in collaborating on something similar to an immutable voting system on the Ethereum blockchain.</p>
           </div>

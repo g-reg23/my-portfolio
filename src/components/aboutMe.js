@@ -32,9 +32,9 @@ function AboutMe() {
             am always open to different technologies, and I'm a fast learner. So, contact me if you are interested in collaboration or hiring me.
             </p>
             <p className='aboutSubtitle'>Future Interests:</p>
-            <p className='aboutText'>Understanding javascript at a deeper level. Mobile development: native development, React Native, and Dart. If I get the time,
-            I'm interested in building a mobile app for YessNo.tk using react native. I would love to work with GraphQL, I plan to use the GraphQL query language
-            for API's in my next project. I am also interested in serverless architecture.
+            <p className='aboutText'>Understanding javascript at a deeper level. I am also very interested in mobile development both native development,
+            and cross-platform development with React Native or Flutter, etc. I am Currently learning java and building an Android app for the private vote functionality of YessNo.tk, with an IOS app to follow.
+            Other interests include containerization, serverless architecture, GraphQL, machine learning, among many other things.
             </p>
             <p className='aboutSubtitle'>Personal:</p>
             <p className='aboutText'>I'm a part time wrestling coach. I've been a high school coach for over 5 years. I am also now working with a club program
