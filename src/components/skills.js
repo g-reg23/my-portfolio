@@ -51,7 +51,7 @@ function Skills() {
                     <button className='skillType' onClick={() => setType(2)}>Database</button>
                   }
                   {typeIndex === 3 ?
-                    <button className='skillTypeFocus' onClick={() => setType(3)}>Dev-ops</button>
+                    <button className='skillTypeFocus' onClick={() => setType(3)}>Dev-Ops</button>
                     :
                     <button className='skillType' onClick={() => setType(3)}>Dev-Ops</button>
                   }

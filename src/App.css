@@ -400,9 +400,6 @@ html {
   border-radius:.25rem;
   margin:10% 0;
 }
-.tripImage:hover {
-  width:50%;
-}
 .yessnoImages {
  width:100%;
  transition: 1s;
