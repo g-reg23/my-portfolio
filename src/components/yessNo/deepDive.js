@@ -8,7 +8,7 @@ const DeepDive = () => {
         <a onClick={() => setTech(!showTech)} className='techButton' href='#deepDive'>Show technical deep dive</a> :
         <div className='innerDiv'>
           <div className='titleDiv'>
-            <p className='innerTitle'>YessNo.tk</p>
+            <p className='innerTitle'>YessNo.co</p>
             <p className='innerSubtitle'>MERN stack web app</p>
             <a href='https://github.com/g-reg23/Yes-No-Client' target='_blank' className='gitHubLink' rel="noopener noreferrer">View front-end code on GitHub</a>
           </div>
@@ -45,7 +45,7 @@ const DeepDive = () => {
             API. It has worked well so far, while some emails are still sent to spam, it occurs less with send-grid.</p>
             <span className='subHeading'>Future</span>
             <p className='techDescription'>I am currently learning java and building a native Android mobile app for the private voting functionallity.
-            So be on the lookout for YessNoPrivate in the Google Play Store in the coming weeks and months. I plan to continue personal development with YessNo.tk. Continued design upgrades are planned,
+            So be on the lookout for YessNoPrivate in the Google Play Store in the coming weeks and months. I plan to continue personal development with YessNo.co. Continued design upgrades are planned,
             including adding more transitions and animations, and designing a cleaner more beatiful aesthetic.  I am also interested in blockchain, therefore building
             an immutable vote smart contract on the ethereum blockchain is very interesting to me. It could replace public votes or become
             it's own entity. Email me if you have any interest in collaborating on something similar to an immutable voting system on the Ethereum blockchain.</p>

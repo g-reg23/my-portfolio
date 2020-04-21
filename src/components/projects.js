@@ -23,7 +23,7 @@ function Projects() {
         <p className='projectHeader'>My Projects</p>
         <section className='folioSect'>
           <div className='projectTitleDiv'>
-            <a href='https://yessno.tk' target='_blank' className='projectTitle' rel="noopener noreferrer">YessNo.tk</a>
+            <a href='https://yessno.co' target='_blank' className='projectTitle' rel="noopener noreferrer">YessNo.co</a>
           </div>
           <div className='ssDiv'>
             <Image1 />
