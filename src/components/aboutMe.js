@@ -34,7 +34,7 @@ function AboutMe() {
             <p className='aboutSubtitle'>Future Interests:</p>
             <p className='aboutText'>Understanding javascript at a deeper level. I am also very interested in mobile development both native development,
             and cross-platform development with React Native or Flutter, etc. I am Currently learning java and building an Android app for the private vote functionality of YessNo.co, with an IOS app to follow.
-            Other interests include containerization, serverless architecture, GraphQL, machine learning, among many other things.
+            Other interests include blockchain, serverless architecture, GraphQL, machine learning, among many other things.
             </p>
             <p className='aboutSubtitle'>Personal:</p>
             <p className='aboutText'>I'm a part time wrestling coach. I've been a high school coach for over 5 years. I am also now working with a club program

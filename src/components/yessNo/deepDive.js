@@ -8,7 +8,7 @@ const DeepDive = () => {
         <a onClick={() => setTech(!showTech)} className='techButton' href='#deepDive'>Show technical deep dive</a> :
         <div className='innerDiv'>
           <div className='titleDiv'>
-            <p className='innerTitle'>YessNo.co</p>
+            <a href='https://yessno.co' className='innerTitle'>YessNo.co</a>
             <p className='innerSubtitle'>MERN stack web app</p>
             <a href='https://github.com/g-reg23/Yes-No-Client' target='_blank' className='gitHubLink' rel="noopener noreferrer">View front-end code on GitHub</a>
           </div>

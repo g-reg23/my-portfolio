@@ -11,11 +11,12 @@ function Desc() {
   });
   return(
     <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility>
-      <a.span className=' grid-desc' style={fade}>
-          <p className='yessNoDesc grid-desc'>YessNo is a yes or no voting application. It offers both public and private votes. Public votes are open to all YessNo members
+      <a.div className='yessNoDesc' style={fade}>
+          <a href='https://yessno.co' className='yessNoLink'>YessNo.Co</a>
+          <p className='grid-desc'>YessNo is a yes or no voting application. It offers both public and private votes. Public votes are open to all YessNo members
           to voice their opinions on. Private votes are for smaller groups of people. Each vote member will receive an SMS message and email with
           a unique link to the vote. Technical deep dive below.</p>
-      </a.span>
+      </a.div>
     </VisibilitySensor>
   )
 }

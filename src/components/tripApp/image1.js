@@ -15,7 +15,7 @@ const TripImage1 = () => {
     color: 'cadetblue',
   }
   return(
-    <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility>
+    <VisibilitySensor partialVisibility onChange={(isVisible) => setVis(isVisible)}>
       <a.a href='https://github.com/g-reg23/trip-app' target='_blank' style={fade}>
         <Popup trigger={<img src={TripLanding} alt='yessno-landing-page' className='tripImage'/>} position='top center' on='hover'>
           <p style={pStyle}>Click image to view code at GitHub</p>
