@@ -33,7 +33,7 @@ function Skills() {
       <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility offset={{bottom:300}}>
         <div className='skillsOuter'>
           <a.div style={backgroundAnim} className='skillsDiv'>
-             <a.div style={style}>
+             <a.div className='skillsInnerDiv'>
                 <div className='typeDiv'>
                   {typeIndex === 0 ?
                     <button className='skillTypeFocus' onClick={() => setType(0)}>Front-End</button>

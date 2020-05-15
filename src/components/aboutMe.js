@@ -22,7 +22,7 @@ function AboutMe() {
     <div id='about' style={{marginTop:'25%'}}>
       <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility offset={{bottom:250}}>
         <a.div className='aboutDiv' style={backgroundAnim}>
-          <a.div className='aboutSubDiv' style={grow}>
+          <a.div className='aboutSubDiv'>
             <p className='aboutSubtitle'>About Me:</p>
             <p className='aboutText'>Hey I'm Greg, I'm a self taught web developer with a passion for learning about the web, programming, and all things tech.
             One day years ago I started an amazing show called Mr. Robot, I loved it, but realized I had no idea what they were talking about when it got technical.

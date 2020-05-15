@@ -187,6 +187,9 @@ html {
   background:#BFBFBF;
   padding: 0;
 }
+.skillsInnerDiv {
+  padding-bottom:5%;
+}
 .skillsList {
   width:40%;
   /* margin:auto; */
