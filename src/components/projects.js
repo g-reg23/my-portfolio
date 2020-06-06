@@ -26,8 +26,8 @@ function Projects() {
             <a href='https://yessno.co' target='_blank' className='projectTitle' rel="noopener noreferrer">YessNo.co</a>
           </div>
           <div className='ssDiv'>
-            <Image1 />
             <Desc />
+            <Image1 />
             <Image2 />
           </div>
           <div className='techDiv'>

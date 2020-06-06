@@ -373,8 +373,8 @@ html {
 .ssDiv {
   margin-top:10%;
   display: inline-grid;
-  grid-template-rows: [begin] 33% [divider1] 33% [divider2] 33% [endline];
-  grid-template-columns: [begin] 100% [endline];
+  grid-template-rows: 1fr;
+  /* grid-template-columns: [begin] 100% [endline]; */
 
   /* grid-template-rows: 1fr 1fr 1fr; */
 }
@@ -397,16 +397,16 @@ html {
   font-size: 1.3rem;
   font-weight:400;
 }
-.imageLink1 {
+/* .imageLink1 {
   grid-row: divider1 / divider2;
   align-self: start;
 }
 .imageLink2 {
   grid-row: divider2 / endline;
   align-self: start;
-}
+} */
 .imageLink {
-  width:40%;
+  width:60%;
   margin:auto;
 }
 .tripImage {
