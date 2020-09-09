@@ -16,13 +16,13 @@ import DevOps from './skillComps/devOps';
 function Skills() {
   const [vis, setVis] = useState(false);
   const [typeIndex, setType] = useState(0);
-  const style = useSpring({
-    transform: vis ? 'scaleX(1) scaleY(1)' : 'scaleX(0) scaleY(0)',
-    opacity: vis ? 1 : 0,
-    from: {opacity: 0, transform:'scaleX(0) scaleY(0)'},
-    config: {duration: 2000},
-    padding: '1%',
-  });
+  // const style = useSpring({
+  //   transform: vis ? 'scaleX(1) scaleY(1)' : 'scaleX(0) scaleY(0)',
+  //   opacity: vis ? 1 : 0,
+  //   from: {opacity: 0, transform:'scaleX(0) scaleY(0)'},
+  //   config: {duration: 2000},
+  //   padding: '1%',
+  // });
   const backgroundAnim = useSpring({
     opacity: vis ? 1 : 0,
     from: {opacity:0},

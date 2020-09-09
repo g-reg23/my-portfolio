@@ -182,12 +182,13 @@ html {
   max-width:1200px;
   border-radius:.5rem;
   margin:auto;
-  margin-top: 10%;
+  /* margin-top: 5%; */
   color: black;
   background:#BFBFBF;
   padding: 0;
 }
 .skillsInnerDiv {
+  padding-top:5%;
   padding-bottom:5%;
 }
 .skillsList {
@@ -214,11 +215,10 @@ html {
   text-decoration: underline;
 }
 .typeDiv {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top:-5%
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 3px;
+  padding: 0 3px;
 }
 .skillsOuter {
   padding:0;
@@ -226,21 +226,21 @@ html {
 .skillsListItem {
   display:flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 0 2.5px;
 }
 .skillsListHeader {
   text-align: center;
 }
 .skillType, .skillTypeFocus {
-  margin: 5% 0 8%;
   text-decoration: underline;
   font-size: .88rem;
   border: none;
   background:transparent;
   cursor:pointer;
   transition:.3s;
-  padding:2%;
+  padding:8% 0;
   border-radius:.5rem;
   color:#404040;
   white-space: nowrap;
@@ -259,6 +259,9 @@ html {
 
 }
 /* do hex #1472FA */
+.skillsOuter {
+  margin-bottom:5%;
+}
 .skillType:focus, .skillTypeFocus:focus {
   outline:none;
 }
@@ -273,7 +276,7 @@ html {
   cursor: pointer;
   border-radius:.5rem;
   transition:.3s;
-  padding:1%;
+  margin:0 2.5%;
 }
 .svgButton:hover {
   background:#757A80;
@@ -324,13 +327,12 @@ html {
   z-index: 5000;
 }
 .projectDiv {
-  margin: 20% 0 15%;
   background: whitesmoke;
   padding:5% 0;
 }
 .projectHeader {
-  font-size: 1.75rem;
-  margin-bottom: 8%;
+  font-size: 2rem;
+  text-decoration: underline;
   font-weight: 500;
 }
 .projectTitle {
@@ -483,9 +485,8 @@ html {
   color: 	#ECEEEF;
 }
 .folioSect {
-  margin-top:45%;
+  margin-top:5%;
 }
-
 .techDescription {
   font-size:1.09rem;
   font-weight:normal;
@@ -533,6 +534,14 @@ html {
   color:navy;
   font-size:1.2em;
 }
+.xampContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.xampImage {
+  width: 90%;
+  border-radius:.5rem;
+}
 @media only screen and (min-width:330px) {
   .skillType, .skillTypeFocus {
     font-size:.94rem;
@@ -571,7 +580,7 @@ html {
     width:75%;
   }
   .folioSect {
-    margin-top:40%;
+    /* margin-top:40%; */
   }
   .grid-desc {
     font-size: 1.1rem
@@ -604,6 +613,10 @@ html {
     max-width: 1200px;
     border-radius:.5rem;
   }
+  .ynDiv {
+    width:90%;
+    margin:auto;
+  }
   .skillsOuter {
     margin-top:30%
   }
@@ -611,7 +624,21 @@ html {
     margin-top: 10%;
   }
 }
-@media only screen and (min-width:760px) {
+@media only screen and (min-width:769px) {
+  .xampContainer {
+    grid-template-columns: 1fr 1fr;
+    column-gap:15px;
+  }
+  .xampImage {
+    width:80%;
+  }
+  .typeDiv {
+    column-gap: 10px;
+    padding: 0 10px;
+  }
+  .skillsInnerDiv {
+    padding-top:2%;
+  }
   .image2,.image1 {
     margin-top:0;
   }
@@ -619,7 +646,7 @@ html {
     margin-bottom:0;
   }
   .folioSect{
-    margin-top:20%;
+    margin-top:10%;
   }
   .nav {
     height:2.25em;
@@ -684,7 +711,18 @@ html {
     font-size:1.15rem;
   }
 }
+
 @media only screen and (min-width:900px) {
+  .xampDDiv {
+    width:70%;
+  }
+  .typeDiv {
+    column-gap: 15px;
+    padding: 0 15px;
+  }
+  .skillType, .skillTypeFocus {
+    margin: 5% 0 2%;
+  }
   .header-div {
     margin-top:13%;
   }
@@ -694,9 +732,15 @@ html {
   .folio {
     margin-top:
   }
-
+}
+.xImageDiv, .xampDDiv {
+  margin-top:5%;
 }
 @media only screen and (min-width:1060px) {
+  .typeDiv {
+    column-gap: 20px;
+    padding: 0 20px;
+  }
   .tripImage {
     width:35%;
   }
@@ -728,5 +772,11 @@ html {
   }
   .innerDiv {
     width:50%;
+  }
+  .ynDiv {
+    width:100%;
+  }
+  .xampDDiv {
+    width:80%;
   }
 }

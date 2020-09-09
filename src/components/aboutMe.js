@@ -10,11 +10,11 @@ function AboutMe() {
     from: {opacity:0},
     config: {duration: 2000},
   })
-  const grow = useSpring({
-    transform: vis ? 'scaleX(1) scaleY(1)' : 'scaleX(0) scaleY(0)',
-    from: {transform:'scaleX(0) scaleY(0)'},
-    config: {duration: 2000},
-  });
+  // const grow = useSpring({
+  //   transform: vis ? 'scaleX(1) scaleY(1)' : 'scaleX(0) scaleY(0)',
+  //   from: {transform:'scaleX(0) scaleY(0)'},
+  //   config: {duration: 2000},
+  // });
   const pStyle = {
     color: 'cadetblue',
   }

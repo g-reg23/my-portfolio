@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import {useSpring, animated as a} from 'react-spring';
 import ExpressSvg from '../svg/expressSvg';
 import NodeSvg from '../svg/nodeSvg';
 import FlaskSvg from '../svg/flaskSvg';

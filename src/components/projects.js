@@ -8,6 +8,8 @@ import FolioDesc from './folio/folioDesc';
 import TripDesc from './tripApp/tripDesc';
 import TripImage1 from './tripApp/image1';
 import DeepDive from './yessNo/deepDive';
+import XBImage1 from './xamp/image';
+import XBDesc from './xamp/XBDesc';
 
 function Projects() {
   const [vis, setVis] = useState(false);
@@ -22,9 +24,12 @@ function Projects() {
       <a.div id='projects' className='projectDiv' style={backgroundAnim}>
         <p className='projectHeader'>My Projects</p>
         <section className='folioSect'>
-          <div className='projectTitleDiv'>
-            <a href='https://yessno.co' target='_blank' className='projectTitle' rel="noopener noreferrer">YessNo.co</a>
+          <div className='xampContainer'>
+            <XBDesc />
+            <XBImage1 />
           </div>
+        </section>
+        <section className='folioSect'>
           <div className='ssDiv'>
             <Desc />
             <Image1 />
