@@ -5,8 +5,9 @@ function MysqlSvg() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="80"
-      height="50"
+      height="80"
       viewBox="0 0 9.252 4.626"
+      className='svgIcon'
     >
       <g fillRule="evenodd">
         <path

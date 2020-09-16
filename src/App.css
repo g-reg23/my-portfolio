@@ -114,6 +114,7 @@ html {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top:2%;
+  padding:0 2%;
 }
 .button1 {
   margin: 3% 1% 0 2%;
@@ -408,7 +409,7 @@ html {
   align-self: start;
 } */
 .imageLink {
-  width:60%;
+  width:70%;
   margin:auto;
 }
 .tripImage {
@@ -560,6 +561,17 @@ html {
   .subTitle {
     font-size: 19px
   }
+  .buttonDiv {
+    margin-top:4%;
+  }
+}
+@media only screen and (min-width:375px) and (min-height:700px) {
+  .buttonDiv {
+    margin-top:8%;
+  }
+  .subTitle, .desc {
+    font-size:1.35rem;
+  }
 }
 @media only screen and (min-width:450px) {
   .innerDiv, .grid-desc {
@@ -661,11 +673,11 @@ html {
     margin-top: 6%;
   }
   .ssDiv {
-    display:inline-grid;
-    grid-template-columns: [begin] 1fr [divider1] 1fr [divider2] 1fr [endline];
-    grid-template-rows: [begin] 1fr [endline];
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: [begin] 1fr [endline]; */
   }
-  .imageLink1 {
+  /* .imageLink1 {
     grid-column: begin / divider1;
     grid-row: begin / endline;
     align-self:start;
@@ -680,9 +692,9 @@ html {
     grid-row: begin / endline;
     grid-row-end:auto;
     font-size:1.1rem;
-  }
+  } */
   .imageLink {
-    width:60%;
+    width:70%;
   }
   .yessnoImages {
     width:90%;
@@ -736,6 +748,26 @@ html {
 .xImageDiv, .xampDDiv {
   margin-top:5%;
 }
+@media only screen and (min-width:760px) and (min-height:1000px){
+  .title {
+    font-size:2.5rem;
+  }
+  .desc, .subTitle {
+    font-size:2rem;
+  }
+  .topButtons {
+    font-size:2rem;
+  }
+  .techDescription, .aboutText, .email, .innerSubtitle, .gitHubLink, .skillType, .skillTypeFocus, .skillsDesc, p, a, .subHeading, .minimize {
+    font-size:1.7rem;
+  }
+  .aboutSubtitle, .innerTitle, .techButton, .skillTypeTitle, .projectHeader {
+    font-size:2.2rem;
+  }
+  .nav {
+    height:3rem;
+  }
+}
 @media only screen and (min-width:1060px) {
   .typeDiv {
     column-gap: 20px;
@@ -761,6 +793,43 @@ html {
   }
   .yessNoDesc {
     font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width:1000px) and (min-height:1200px) {
+  .xampContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size:3.2rem;
+  }
+  .desc, .subTitle {
+    font-size:2.5rem;
+  }
+  .topButtons {
+    font-size:2.2rem;
+    padding:2%;
+  }
+  .techDescription, .aboutText, .email, .innerSubtitle, .gitHubLink, .skillType, .skillTypeFocus, .skillsDesc, p, a, .subHeading, .minimize {
+    font-size:2.2rem;
+  }
+  .aboutSubtitle, .innerTitle, .techButton, .skillTypeTitle, .projectHeader {
+    font-size:2.5rem;
+  }
+  .nav {
+    height:4rem;
+  }
+  .ssDiv {
+    grid-template-columns: 1fr;
+  }
+  /* .imageLink {
+    width:85%;
+  } */
+  .imageLink1 {
+    margin-top: 15%;
+  }
+  .imageLink2, .ynDiv {
+    margin-top:8%;
   }
 }
 @media only screen and (min-width:1200px) {

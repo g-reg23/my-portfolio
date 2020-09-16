@@ -2,7 +2,7 @@ import React from "react";
 
 function MongoSvg() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" className='svgIcon'>
       <path
         fill="#5d4037"
         d="M42 17.3C42 37.8 24 44 24 44S6 37.8 6 17.3c0-2.5.2-4.6.4-6.3.3-2.5 2-4.5 4.4-5.1C13.9 5 18.8 4 24 4s10.1 1 13.3 1.9c2.4.6 4.1 2.7 4.4 5.1.1 1.7.3 3.9.3 6.3z"

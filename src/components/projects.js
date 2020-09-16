@@ -31,8 +31,8 @@ function Projects() {
         </section>
         <section className='folioSect'>
           <div className='ssDiv'>
-            <Desc />
             <Image1 />
+            <Desc />
             <Image2 />
           </div>
           <div className='techDiv'>
