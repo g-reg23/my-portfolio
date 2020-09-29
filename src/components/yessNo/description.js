@@ -15,7 +15,7 @@ function Desc() {
          <div className='titleDiv'>
            <p className='innerTitle'>YessNo.co</p>
            <p className='innerSubtitle'>Yes No Voting Application</p>
-           <a href='https://yesso.co' target='_blank' className='gitHubLink' rel="noopener noreferrer">Visit Site</a>
+           <a href='https://yessno.co' target='_blank' className='gitHubLink' rel="noopener noreferrer">Visit Site</a>
         </div>
         <div className='infoDiv'>
           <span className='subHeading'>Description</span>
