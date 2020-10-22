@@ -19,9 +19,9 @@ function Desc() {
         </div>
         <div className='infoDiv'>
           <span className='subHeading'>Description</span>
-          <p className='techDescription'>YessNo is a yes or no voting application. It offers both public and private votes. Public votes are open to all YessNo members
+          <p className='techDescription'>YessNo is a yes or no voting application. It offers public and private voting, as well as surveys called sprints. Public votes are open to all YessNo members
             to voice their opinions on. Private votes are for smaller groups of people. Each vote member will receive an SMS message and email with
-            a unique link to the vote. Technical deep dive below.
+            a unique link to the vote. Sprints are a rapid fire survey platform. Technical deep dive below.
           </p>
         </div>
       </a.div>
