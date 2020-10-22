@@ -295,7 +295,16 @@ html {
   height: 40vmin;
   pointer-events: none;
 }
-
+.videoPlayer {
+  border-radius: .5rem;
+  width:100%;
+  height:500px;
+  border-radius:.5rem;
+}
+.vidDiv {
+  width:90%;
+  margin:auto;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -454,6 +463,9 @@ html {
   padding: 0;
   margin:auto;
 }
+.spectSect {
+  width:100%;
+}
 .minimize {
   font-size:1.15rem;
   color:aquamarine;
@@ -559,7 +571,7 @@ html {
     margin-top:45%
   }
   .subTitle {
-    font-size: 19px
+    font-size: 21px
   }
   .buttonDiv {
     margin-top:4%;
@@ -569,7 +581,10 @@ html {
   .buttonDiv {
     margin-top:8%;
   }
-  .subTitle, .desc {
+  .subTitle {
+    font-size:1.45rem;
+  }
+  .desc {
     font-size:1.35rem;
   }
 }
@@ -607,7 +622,7 @@ html {
     margin-top: 4%;
   }
   .subTitle {
-    font-size: 21px
+    font-size: 22px
   }
   .techDiv {
     margin-top:9%
@@ -637,6 +652,9 @@ html {
   }
 }
 @media only screen and (min-width:769px) {
+  .videoPlayer {
+    height:100%;
+  }
   .xampContainer {
     grid-template-columns: 1fr 1fr;
     column-gap:15px;
@@ -752,7 +770,10 @@ html {
   .title {
     font-size:2.5rem;
   }
-  .desc, .subTitle {
+  .subTitle {
+    font-size:2.15rem;
+  }
+  .desc {
     font-size:2rem;
   }
   .topButtons {
@@ -803,7 +824,10 @@ html {
   .title {
     font-size:3.2rem;
   }
-  .desc, .subTitle {
+  .subTitle {
+    font-size:2.65rem;
+  }
+  .desc {
     font-size:2.5rem;
   }
   .topButtons {
@@ -833,6 +857,9 @@ html {
   }
 }
 @media only screen and (min-width:1200px) {
+  .subTitle {
+    font-size:1.85rem;
+  }
   .header-div {
     margin-top:11%;
   }
@@ -841,6 +868,9 @@ html {
   }
   .innerDiv {
     width:50%;
+  }
+  .spectSect {
+    width:80%;
   }
   .ynDiv {
     width:100%;

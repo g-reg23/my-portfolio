@@ -10,6 +10,7 @@ import TripImage1 from './tripApp/image1';
 import DeepDive from './yessNo/deepDive';
 import XBImage1 from './xamp/image';
 import XBDesc from './xamp/XBDesc';
+import Spectre from './spectre/Spectre';
 
 function Projects() {
   const [vis, setVis] = useState(false);
@@ -23,6 +24,9 @@ function Projects() {
     <VisibilitySensor onChange={(isVisible) => setVis(isVisible)} partialVisibility offset={{bottom:300}}>
       <a.div id='projects' className='projectDiv' style={backgroundAnim}>
         <p className='projectHeader'>My Projects</p>
+        <section className='folioSect'>
+          <Spectre />
+        </section>
         <section className='folioSect'>
           <div className='xampContainer'>
             <XBDesc />
