@@ -26,7 +26,7 @@ const XBDesc = () => {
           well as worked with web3.js and Metamask APIs to interact with the blockchain. I also worked extensively with the CoinGecko API for
           price data. Utilizing web3 I was able to call many of the Xamp smart contract methods. With Metamask I was able to make a button to call Xamp's
           rebase function, which is a payable function that checks Xamps price and if the price is lower than the day before it burns 1% of the entire
-          token supply, for the entire community to use.
+          token supply.
           </p>
         </div>
       </a.div>
