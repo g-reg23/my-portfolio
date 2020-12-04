@@ -145,8 +145,8 @@ html {
   white-space:nowrap;
   margin: 0 auto;
   animation:
-    typewriter 5s steps(25, end),
-    cursor .5s step-end 7;
+    typewriter 4.5s steps(23, end),
+    cursor .45s step-end 7;
   animation-delay: 0s;
   border-right:1px transparent solid
 }
@@ -161,8 +161,8 @@ html {
   to{width: 400px;}
 }
 @keyframes cursor {
-  from,to{border-color:transparent}
-  50%{border-color:orange}
+  from,to{border-color:orange}
+  50%{border-color:transparent}
 }
 .skillsOuter {
   padding-top:5%;
@@ -440,7 +440,8 @@ html {
   margin-top:10%;
 }
 .yessnoImages:hover {
-  width:130%;
+  width:110%;
+  margin-right: auto;
 }
 .techButton {
   border: none;

@@ -12,7 +12,7 @@ const Header = () =>  {
     from: {opacity:0},
     config:{duration:1000},
     marginTop:'10%',
-    delay: 4000,
+    delay: 3000,
   })
   return(
       <a.div className='topDiv'>
