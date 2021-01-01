@@ -19,7 +19,7 @@ function FolioDesc() {
         </div>
         <div className='infoDiv'>
           <span className='subHeading'>Front-End</span>
-          <p className='techDescription'>GStauf.tech is the site you are on right now. I built this site from scratch to show to those interested in my ability,
+          <p className='techDescription'>GStauf.tech is the site you are on right now. I know.. meta right?!! I built this site from scratch to show to those interested in my ability,
           and to continue learning. I have learned the React hooks API, CSS transitions and animations, and react-spring coupled with
           react-visibility-sensor for scroll-into-view transitions. React-spring is very nice to be able to work with transitions and animations
           in javascript, but I do recommend some knowledge of CSS (transition, animation, transform to name a few) as well,
