@@ -18,8 +18,8 @@ const Header = () =>  {
       <a.div className='topDiv'>
         <a.div className='header-div'>
           <a.p className='alice-text title' style={title}>Greg Stauffer</a.p>
-          <a.p className='alice-text subTitle'>Web & Blockchain Dev</a.p>
-          <a.p className='alice-text desc' style={desc}>Hey I'm Greg, I'm a full stack web developer. I love coding and learning about the web.
+          <a.p className='alice-text subTitle'>Full Stack Developer</a.p>
+          <a.p className='alice-text desc' style={desc}>Hey I'm Greg, I'm a full stack web and mobile developer. I love coding and learning about the web.
           This site was built from scratch to continue working on my frontend skills. Scroll down to view more about me. Feel free to contact me anytime.</a.p>
         </a.div>
         <a.div className='buttonDiv' style={desc}>
